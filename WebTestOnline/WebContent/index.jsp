@@ -76,8 +76,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</li>
 							<li>
 								<a class="link link--yaku scroll" href="#mail">
-									<span>Đăng</span><span></span><span>Nhập</span>					
+									<span  data-toggle='modal' data-target='#LoginModal'>Đăng</span><span></span><span>Nhập</span>					
+								<div class="modal fade" id="LoginModal" role="dialog">
 								</a>
+							<div class="modal-dialog">
+
+								<!-- Modal content-->
+								
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 style="color: red;">
+											<span class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP
+										</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form" action="XuLyDangNhap" method="post">
+											<div class="form-group">
+												<label for="usrname"><span
+													class="glyphicon glyphicon-user"></span> Tài khoản</label> <input type="text" class="form-control"
+													id="email" name="username" placeholder="Nhập email...">
+											</div>
+											<div class="form-group">
+												<label for="psw"><span
+													class="glyphicon glyphicon-eye-open"></span> Mật Khẩu</label> <input
+													type="text" class="form-control" id="pwd" name="pass"
+													placeholder="Nhập password...">
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" value="" checked>Nhớ
+													mật khẩu</label>
+											</div>
+											<button type="submit"
+												class="btn btn-default btn-success btn-block">
+												<span class="glyphicon glyphicon-off"></span> ĐĂNG NHẬP
+											</button>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<p>
+											Không có tài khoản? <a href="#">Đăng Kí</a>
+										</p>
+										<p>
+											Quên <a href="#">Mật khẩu?</a>
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+								
 							</li>
 						</ul>
 					</nav>
@@ -227,7 +275,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileits_team_grid_figure_social">
 						<ul class="w3ls_social">
 							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-gmail" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-google" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
@@ -241,7 +289,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileits_team_grid_figure_social">
 						<ul class="w3ls_social">
 							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-gmail" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-google" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
@@ -255,7 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="agileits_team_grid_figure_social">
 						<ul class="w3ls_social">
 							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-gmail" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-google" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
