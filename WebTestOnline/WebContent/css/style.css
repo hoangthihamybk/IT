@@ -269,12 +269,11 @@ a.w3_agile_vimeo:hover{
     border-bottom: 1px solid;
     width: 28%;
     text-transform: capitalize;
-	color:#212121;
+	color:#58FA58;
 }
 .wrapper .sentence {
     font-size:5em;
-	text-transform: capitalize;
-	font-family: 'Cabin Condensed', sans-serif;
+	text-transform: capitalize;	
 }
 
 /*Pop Effect*/
@@ -307,10 +306,11 @@ a.w3_agile_vimeo:hover{
 	-webkit-animation-delay: 7.5s;
 }
 .popEffect span:nth-child(5){
-	animation-delay: 10s;
-	-ms-animation-delay: 10s;
-	-webkit-animation-delay: 10s;
+	animation-delay: 15s;
+	-ms-animation-delay: 15s;
+	-webkit-animation-delay: 1s;
 }
+
 
 /*Pop Effect Animation*/
 @-moz-keyframes pop{
@@ -492,6 +492,7 @@ a.w3_agile_vimeo:hover{
 .agileits_team_grid_figure img{
 	border: 5px solid #fff;
     border-radius: 90px;
+    height:160px;
 }
 .agileits_team_grid_figure_social{
 	margin:4em 0 0 0.5em;
@@ -649,6 +650,7 @@ a.w3_agile_vimeo:hover{
 	border: 5px solid #fff;
     border-radius: 120px;
     margin: 0 auto;
+    height:170px;
 }
 /*-- //testimonials --*/
 /*-- contact --*/

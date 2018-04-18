@@ -222,7 +222,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agileits_team_grids">
 				<div class="col-md-4 agileits_team_grid">
 					<div class="agileits_team_grid_figure">
-						<img src="images/anh1.jpg" alt=" " class="img-responsive" height="170px" width="170px"/>
+						<img src="images/anh1.jpg" alt=" " class="img-responsive" />
 					</div>
 					<div class="agileits_team_grid_figure_social">
 						<ul class="w3ls_social">
@@ -236,7 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 agileits_team_grid">
 					<div class="agileits_team_grid_figure">
-						<img src="images/anh2.jpg" alt=" " class="img-responsive" height="140px" width="170px" />
+						<img src="images/anh2.jpg" alt=" " class="img-responsive" />
 					</div>
 					<div class="agileits_team_grid_figure_social">
 						<ul class="w3ls_social">
@@ -250,7 +250,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 agileits_team_grid">
 					<div class="agileits_team_grid_figure">
-						<img src="images/anh3.jpg" alt=" " class="img-responsive" height="70px" width="170px"/>
+						<img src="images/anh3.jpg" alt=" " class="img-responsive" />
 					</div>
 					<div class="agileits_team_grid_figure_social">
 						<ul class="w3ls_social">
@@ -270,17 +270,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- gallery -->
 	<div id="gallery" class="gallery_main">
 		<div class="container">
-			<h3 class="wthree_head"><i class="fa fa-picture-o" aria-hidden="true"></i><span>Graduate</span>Photo Gallery</h3>
+			<h3 class="wthree_head"><i class="fa fa-picture-o" aria-hidden="true"></i><span>Học online</span>Khoảnh khắc</h3>
 			<div class="w3l_gallery_grids">
 				<ul class="w3l_gallery_grid gallery" id="lightGallery">
 					<li data-title="Graduate" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/1.jpg" data-responsive-src="images/1.jpg"> 
 						<div class="w3_w3l_gallery_grid box">
 							<a href="#">
-								<img src="images/1.jpg" alt=" " class="img-responsive" /> 
+								<img src="images/anh7.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -288,11 +287,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li data-title="Graduate" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/7.jpg" data-responsive-src="images/7.jpg"> 
 						<div class="w3_w3l_gallery_grid box">
 							<a href="#">
-								<img src="images/7.jpg" alt=" " class="img-responsive" /> 
+								<img src="images/anh8.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -302,9 +300,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="#">
 								<img src="images/5.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -312,11 +309,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li data-title="Graduate" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/6.jpg" data-responsive-src="images/6.jpg"> 
 						<div class="w3_w3l_gallery_grid box">
 							<a href="#">
-								<img src="images/6.jpg" alt=" " class="img-responsive" /> 
+								<img src="images/anh9.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -326,9 +322,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="#">
 								<img src="images/8.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -336,11 +331,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li data-title="Graduate" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/9.jpg" data-responsive-src="images/9.jpg"> 
 						<div class="w3_w3l_gallery_grid box">
 							<a href="#">
-								<img src="images/9.jpg" alt=" " class="img-responsive" /> 
+								<img src="images/anh10.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -350,9 +344,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="#">
 								<img src="images/10.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -360,11 +353,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li data-title="Graduate" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/11.jpg" data-responsive-src="images/11.jpg"> 
 						<div class="w3_w3l_gallery_grid box">
 							<a href="#">
-								<img src="images/11.jpg" alt=" " class="img-responsive" /> 
+								<img src="images/anh11.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -372,11 +364,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li data-title="Graduate" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/12.jpg" data-responsive-src="images/12.jpg"> 
 						<div class="w3_w3l_gallery_grid box">
 							<a href="#">
-								<img src="images/12.jpg" alt=" " class="img-responsive" /> 
+								<img src="images/anh12.jpg" alt=" " class="img-responsive" /> 
 								<div class="caption scale-caption">
-									<h3>Graduate</h3>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-										sed diam nonummy nibh euismod tincidunt.</p>
+									<h3>Học online</h3>
+									<p></p>
 								</div>
 							</a>
 						</div>
@@ -401,32 +392,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- testimonials -->
 	<div class="testimonials">
 		<div class="container">
-			<h3 class="wthree_head wthree_head1"><i class="fa fa-quote-right" aria-hidden="true"></i>what our Parents says</h3>
+			<h3 class="wthree_head wthree_head1"><i class="fa fa-quote-right" aria-hidden="true"></i>Học sinh nói gì?</h3>
 			<div class="w3_testimonials_grids">
 				<section class="slider">
 					<div class="flexslider">
 						<ul class="slides">
 							<li>
 								<div class="col-md-7 w3_testimonials_grid_left">
-									<p>" Morbi cursus, turpis quis laoreet blandit, odio turpis imperdiet nisl, 
-										quis bibendum lorem purus lobortis nunc. Suspendisse tincidunt eu sapien 
-										pellentesque interdum. Aenean lacus sapien, blandit vel nibh in, imperdiet 
-										egestas erat.</p>
+									<p>" Hệ thống rất tuyệt. Em có thể tham gia thử sức với những đề thi và trao đổi kiến thức với nhiều bạn khác</p>
 								</div>
 								<div class="col-md-5 w3_testimonials_grid_right">
-									<img src="images/4.png" alt=" " class="img-responsive" />
+									<img src="images/anh5.jpg" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</li>
 							<li>
 								<div class="col-md-7 w3_testimonials_grid_left">
-									<p>" Morbi cursus, turpis quis laoreet blandit, odio turpis imperdiet nisl, 
-										quis bibendum lorem purus lobortis nunc. Suspendisse tincidunt eu sapien 
-										pellentesque interdum. Aenean lacus sapien, blandit vel nibh in, imperdiet 
-										egestas erat.</p>
+									<p>"Em đã đạt 27 điểm. Em rất cám ơn các anh chị và các bạn cùng hệ thống Học Online.</p>
 								</div>
 								<div class="col-md-5 w3_testimonials_grid_right">
-									<img src="images/5.png" alt=" " class="img-responsive" />
+									<img src="images/anh6.jpg" alt=" " class="img-responsive" />
 								</div>
 								<div class="clearfix"> </div>
 							</li>
@@ -451,73 +436,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //testimonials -->
 <!-- contact -->
-	<div id="mail" class="contact">
-		<div class="container">
-			<h3 class="wthree_head"><i class="fa fa-envelope" aria-hidden="true"></i><span>Graduate</span>Mail Us</h3>
-			<div class="w3layouts_mail_grids">
-				<div class="col-md-5 w3layouts_mail_grid_left">
-					<div class="w3_agile_contact_left">
-						<ul>
-							<li><img src="images/14.jpg" alt=" " class="img-responsive" /></li>
-							<li><img src="images/15.jpg" alt=" " class="img-responsive" /></li>
-							<li><img src="images/17.jpg" alt=" " class="img-responsive" /></li>
-							<li><img src="images/18.jpg" alt=" " class="img-responsive" /></li>
-							<li><img src="images/16.jpg" alt=" " class="img-responsive" /></li>
-							<li><img src="images/19.jpg" alt=" " class="img-responsive" /></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-7 w3layouts_mail_grid_right">
-					<form action="#" method="post">
-						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Name" placeholder="Name" required="">
-							<input type="email" name="Email" placeholder="Email" required="">
-						</div>
-						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Telephone" placeholder="Telephone" required="">
-							<input type="text" name="Subject" placeholder="Subject" required="">
-						</div>
-						<div class="clearfix"> </div>
-						<textarea name="Message" placeholder="Message..." required=""></textarea>
-						<input type="submit" value="Submit">
-						<input type="reset" value="Clear">
-					</form>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.878331233398!2d-73.9881300845955!3d40.69867717933326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3455555555%3A0xba0a7f3d92bbaa09!2sEducation+Department!5e0!3m2!1sen!2sin!4v1473320053257" style="border:0"></iframe>
-		<div class="agile_map_grid">
-			<div class="agile_map_grid1">
-				<h3>Contact Info</h3>
-				<ul>
-					<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><span>address :</span> 868 1st Avenue NYC.</li>
-					<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><span>email :</span> <a href="mailto:info@example.com">info@example.com</a></li>
-					<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><span>call to us :</span> (+123) 233 2362 826</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+
 <!-- //contact -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
 			<div class="agileits_w3layouts_footer_grids">
 				<div class="col-md-4 agileits_w3layouts_footer_grid">
-					<h3>Call Us Now</h3>
+					<h3>Gọi chúng tôi ngay:</h3>
 					<ul>
-						<li><span>Office Phone :</span> (+123) 2302 232</li>
+						<li><span>Số điện thoại :</span> (+123) 2302 232</li>
 						<li><span>Fax :</span> (+123) 123 456 455</li>
 					</ul>
 				</div>
 				<div class="col-md-4 agileits_w3layouts_footer_grid">
-					<h3>Address</h3>
-					<p>132 New Lenox, 868 1st Avenue <i>4th Street NYC.</i></p>
+					<h3>Địa chỉ</h3>
+					<p>Đống Đa <i>Hà Nội.</i></p>
 				</div>
 				<div class="col-md-4 agileits_w3layouts_footer_grid">
-					<h3>send a message</h3>
+					<h3>Gửi tin nhắn</h3>
 					<ul>
 						<li><span>Email :</span> <a href="mailto:info@example.com">info@example1.com</a></li>
 						<li><span>Enquiry :</span> <a href="mailto:info@enquiry.com">info@enquiry.com</a></li>
@@ -527,20 +464,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3_agileits_footer_grids">
 				<div class="col-md-4 w3_agileits_footer_grid">
-					<p>Nulla ex dolor, elementum sit amet placerat at, pretium in tortor. 
-						Vestibulum lacinia arcu quis lacus sollicitudin condimentum. 
-						Ut ac aliquet ex.</p>
+					<p>Học online đồng hành cùng sĩ tử Việt.</p>
 				</div>
 				<div class="col-md-4 w3_agileits_footer_grid">
-					<h3>Hours Work</h3>
-					<h4>Admissions are opened</h4>
+					<h3>Giờ làm việc</h3>
 					<ul>
-						<li><span>Mon - Fri : </span> 9:00 AM to 5:00PM</li>
-						<li><span>Sat : </span> 10:00 AM to 3:00PM</li>
+						<li><span>Thứ 2 - Thứ 6 : </span> 9:00 AM - 5:00PM</li>
+						<li><span>Thứ 7 : </span> 10:00 AM - 3:00PM</li>
 					</ul>
 				</div>
 				<div class="col-md-4 w3_agileits_footer_grid">
-					<h3>Subscribe Now</h3>
+					<h3>Đăng ký ngay</h3>
 					<form action="#" method="post">
 						<input type="email" name="Email" placeholder="Email" required="">
 						<input type="submit" value=" ">
