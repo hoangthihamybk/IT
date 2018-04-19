@@ -54,7 +54,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<nav class="link-effect-3" id="link-effect-3">
 						<ul class="nav navbar-nav w3-agileits_home_nav">
 							<li class="active">
-								<a class="link link--yaku" href="index.html">
+								<a class="link link--yaku" href="index.jsp">
 									<span>Trang</span><span>chủ</span>
 													
 								</a>
@@ -168,7 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div id="about" class="banner-bottom">
 		<div class="container">
 			<div class="col-md-7 w3_agileits_banner_bottom_left">
-				<img src="images/1.jpg" alt=" " class="img-responsive" />
+				<img src="images/anh14.jpg" alt=" " class="img-responsive" width ="1000px"/>
 			</div>
 			<div class="col-md-3 w3_agileits_banner_bottom_right">
 				<div class="w3_agileits_banner_bottom_right_pos">
@@ -292,7 +292,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
-					<h4>Bư<span>Mr</span></h4>
+					<h4>Bư <span>Mr</span></h4>
 					<p>---------------------------------</p>
 				</div>
 				<div class="col-md-4 agileits_team_grid">
