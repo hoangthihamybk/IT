@@ -214,11 +214,12 @@ input[type="submit"],input[type="reset"],.w3layouts_banner_info_right ul li a,.w
 }
 .w3layouts_banner_info_left{
 	float:left;
+	padding-left: 100px;
 	width: 50%;
 }
 .w3layouts_banner_info_right{
 	float:right;
-	padding: 1.5em 0 0;
+	padding-right: 100px;	
 }
 .w3layouts_banner_info_right ul li,.w3ls_social li{
 	display:inline-block;
@@ -259,6 +260,7 @@ a.w3_agile_vimeo:hover{
 /*Wrapper*/
 .wrapper{
     position: relative;
+    padding-left:100px;
 }
 .wrapper h2 {
     display: block;
