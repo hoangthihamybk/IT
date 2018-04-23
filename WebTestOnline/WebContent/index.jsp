@@ -11,8 +11,10 @@
 	content="Graduate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript">
+	
 	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } 
+
 </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css"
@@ -72,9 +74,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</a></li>
 							<li><a class="link link--yaku scroll" href="#gallery"> <span>Lớp</span><span>Học</span>
 							</a></li>
-							<li><a class="link link--yaku scroll" href="#mail"> 
-							<span data-toggle='modal' data-target='#LoginModal'>
-							Đăng Nhập</span> 
+							<li><a class="link link--yaku scroll" href="#mail"> <span
+									data-toggle='modal' data-target='#LoginModal'> Đăng Nhập</span>
 							</a>
 								<div class="modal fade" id="LoginModal" role="dialog">
 									<jsp:include page="login-signup.jsp"></jsp:include>
@@ -90,10 +91,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h2>Hãy tham gia cùng lớp học ngay thôi</h2>
 				<div class="sentence">
 					<div class="popEffect">
-						<span>Đăng kí</span>
-						<span>Đăng kí</span>
-						<span>Đăng kí</span> 
-						<span>Đăng kí</span>
+						<span>Đăng kí</span> <span>Đăng kí</span> <span>Đăng kí</span> <span>Đăng
+							kí</span>
 					</div>
 				</div>
 			</section>

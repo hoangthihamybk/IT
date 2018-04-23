@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>    
-    <!DOCTYPE html>
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -45,9 +45,9 @@
               </div>
               <a href="bomon.jsp">
                 <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                     <p data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Thêm bài thi</p>
+                  <div class="row" >
+                    <div class="col-xs-6" >
+                     <p data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Thêm bộ môn</p>
                      <jsp:include page="popupthembomon.jsp"></jsp:include>
                     </div>
                     <div class="col-xs-6 text-right">

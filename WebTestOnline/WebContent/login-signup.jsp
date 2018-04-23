@@ -28,15 +28,17 @@
 
 		<div class="tab-content">
 			<div id="signup">
-				<h1><span class ="glyphicon glyphicon-pencil"></span> Đăng kí</h1>
+				<h1>
+					<span class="glyphicon glyphicon-pencil"></span> Đăng kí
+				</h1>
 
 				<form action="/" method="post">
 
-					
-						<div class="field-wrap">
-							<label> Họ tên<span class="req">*</span>
-							</label> <input type="text" required autocomplete="off" />
-						</div>
+
+					<div class="field-wrap">
+						<label> Họ tên<span class="req">*</span>
+						</label> <input type="text" required autocomplete="off" />
+					</div>
 					<div class="field-wrap">
 						<label> Email<span class="req">*</span>
 						</label> <input type="email" required autocomplete="off" />
@@ -75,8 +77,8 @@
 					</p>
 					</br>
 
-					<button class="button button-block" /><span class ="glyphicon glyphicon-log-in"></span>
-					ĐĂNG NHẬP
+					<button class="button button-block" />
+					<span class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP
 					</button>
 
 				</form>
