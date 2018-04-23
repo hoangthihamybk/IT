@@ -32,57 +32,76 @@
 		<jsp:include page="menu.jsp"></jsp:include>
 		<!--  hết menu -->
 		<div class="noidung">
-			<h2>Danh sách học sinh</h2>
-			</br>
-			<table class="zui-table zui-table-horizontal zui-table-highlight">
-				<thead>
-					<tr>
-						<th>Số thứ tự</th>
-						<th>Họ tên</th>
-						<th>Email</th>
-						<th>Mật khẩu</th>
-						<th>Xóa</a></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>Nguyễn Thị A</td>
-						<td>a@gmail.com</td>
-						<td>12345678</td>
-						<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>Nguyễn Thị A</td>
-						<td>a@gmail.com</td>
-						<td>12345678</td>
-						<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>Nguyễn Thị A</td>
-						<td>a@gmail.com</td>
-						<td>12345678</td>
-						<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>Nguyễn Thị A</td>
-						<td>a@gmail.com</td>
-						<td>12345678</td>
-						<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>Nguyễn Thị A</td>
-						<td>a@gmail.com</td>
-						<td>12345678</td>
-						<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="tieude">
+				<h3>
+					<i class="fa fa-edit fa-2x"></i>Danh sách học sinh
+				</h3>
+			</div>
+			<div class="noidungcon">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control"
+								placeholder="Search for..."> <span
+								class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+						<!-- /input-group -->
+					</div>
+					<!-- /.col-lg-6 -->
+				</div>
+				<!-- /.row -->
+				<table class="zui-table zui-table-horizontal zui-table-highlight">
+					<thead>
+						<tr>
+							<th>Số thứ tự</th>
+							<th>Họ tên</th>
+							<th>Email</th>
+							<th>Mật khẩu</th>
+							<th>Xóa</a></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Nguyễn Thị A</td>
+							<td>a@gmail.com</td>
+							<td>12345678</td>
+							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Nguyễn Thị A</td>
+							<td>a@gmail.com</td>
+							<td>12345678</td>
+							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Nguyễn Thị A</td>
+							<td>a@gmail.com</td>
+							<td>12345678</td>
+							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Nguyễn Thị A</td>
+							<td>a@gmail.com</td>
+							<td>12345678</td>
+							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Nguyễn Thị A</td>
+							<td>a@gmail.com</td>
+							<td>12345678</td>
+							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+						</tr>
+					</tbody>
+				</table>
 
+			</div>
 		</div>
 		<!-- /#wrapper -->
 

@@ -32,60 +32,79 @@
 		<jsp:include page="menu.jsp"></jsp:include>
 		<!--  hết menu -->
 		<div class="noidung">
-			<h3>Xem danh sách bộ môn</h3>
-			</br>
-			<table class="zui-table zui-table-horizontal zui-table-highlight">
-				<thead>
-					<tr>
-						<th>Tên bộ môn</th>
-						<th>Mô tả</th>
-						<th>Tùy chọn</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Toán học</td>
-						<td>Toán học gồm những bài thi thử với thời gian 90 phút. Bộ
-							đề có 50 câu.</td>
-						<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
-								style="color: #2980b9"></i></a> <a href="#"><i
-								class="fa fa-trash-o fa-2x fa-border"></i></a></td>
-					</tr>
-					<tr>
-						<td>Hóa học</td>
-						<td>Hóa học gồm những bài thi thử với thời gian 90 phút. Bộ
-							đề có 50 câu.</td>
-						<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
-								style="color: #2980b9"></i></a> <a href="#"><i
-								class="fa fa-trash-o fa-2x fa-border"></i></a></td>
-					</tr>
-					<tr>
-						<td>Vậy lý</td>
-						<td>Vậy lý gồm những bài thi thử với thời gian 90 phút. Bộ đề
-							có 50 câu.</td>
-						<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
-								style="color: #2980b9"></i></a> <a href="#"><i
-								class="fa fa-trash-o fa-2x fa-border"></i></a></td>
-					</tr>
-					<tr>
-						<td>Sinh học</td>
-						<td>Sinh học gồm những bài thi thử với thời gian 90 phút. Bộ
-							đề có 50 câu.</td>
-						<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
-								style="color: #2980b9"></i></a> <a href="#"><i
-								class="fa fa-trash-o fa-2x fa-border"></i></a></td>
-					</tr>
-					<tr>
-						<td>Tiếng anh</td>
-						<td>Tiếng anh học gồm những bài thi thử với thời gian 90
-							phút. Bộ đề có 50 câu.</td>
-						<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
-								style="color: #2980b9"></i></a> <a href="#"><i
-								class="fa fa-trash-o fa-2x fa-border"></i></a></td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="tieude">
+				<h3>
+					<i class="fa fa-edit fa-2x"></i>Danh sách bộ môn
+				</h3>
+			</div>
+			<div class="noidungcon">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control"
+								placeholder="Search for..."> <span
+								class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+						<!-- /input-group -->
+					</div>
+					<!-- /.col-lg-6 -->
+				</div>
+				<!-- /.row -->
+				<table class="zui-table zui-table-horizontal zui-table-highlight">
+					<thead>
+						<tr>
+							<th>Tên bộ môn</th>
+							<th>Mô tả</th>
+							<th>Tùy chọn</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Toán học</td>
+							<td>Toán học gồm những bài thi thử với thời gian 90 phút. Bộ
+								đề có 50 câu.</td>
+							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+									style="color: #2980b9"></i></a> <a href="#"><i
+									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
+						</tr>
+						<tr>
+							<td>Hóa học</td>
+							<td>Hóa học gồm những bài thi thử với thời gian 90 phút. Bộ
+								đề có 50 câu.</td>
+							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+									style="color: #2980b9"></i></a> <a href="#"><i
+									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
+						</tr>
+						<tr>
+							<td>Vậy lý</td>
+							<td>Vậy lý gồm những bài thi thử với thời gian 90 phút. Bộ
+								đề có 50 câu.</td>
+							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+									style="color: #2980b9"></i></a> <a href="#"><i
+									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
+						</tr>
+						<tr>
+							<td>Sinh học</td>
+							<td>Sinh học gồm những bài thi thử với thời gian 90 phút. Bộ
+								đề có 50 câu.</td>
+							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+									style="color: #2980b9"></i></a> <a href="#"><i
+									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
+						</tr>
+						<tr>
+							<td>Tiếng anh</td>
+							<td>Tiếng anh học gồm những bài thi thử với thời gian 90
+								phút. Bộ đề có 50 câu.</td>
+							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+									style="color: #2980b9"></i></a> <a href="#"><i
+									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
 
+			</div>
 		</div>
 		<!-- /#wrapper -->
 

@@ -13,7 +13,7 @@
 
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
-
+<link href="css/menu.css" rel="stylesheet">
 <!-- Add custom CSS here -->
 <link href="css/sb-admin.css" rel="stylesheet">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -36,9 +36,10 @@
 
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>
+					<div class="tieude"><h1>
 						Dashboard <small></small>
 					</h1>
+					</div>
 					<ol class="breadcrumb">
 						<li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
 					</ol>

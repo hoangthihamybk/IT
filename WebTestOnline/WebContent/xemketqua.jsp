@@ -32,9 +32,27 @@
 		<!--  hết menu -->
 
 		<div class="noidung">
-			<h2>Xem kết quả</h2>
-			</br>
-			<table class="zui-table zui-table-horizontal zui-table-highlight">
+			<div class="tieude">
+				<h3>
+					<i class="fa fa-edit fa-2x"></i>Danh sách kết quả
+				</h3>
+			</div>
+			<div class="noidungcon">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control"
+								placeholder="Search for..."> <span
+								class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+						<!-- /input-group -->
+					</div>
+					<!-- /.col-lg-6 -->
+				</div>
+				<!-- /.row -->
+				<table class="zui-table zui-table-horizontal zui-table-highlight">
 				<thead>
 					<tr>
 						<th>Tên học sinh</th>
@@ -83,6 +101,7 @@
 				</tbody>
 			</table>
 
+			</div>
 		</div>
 		<!-- /#wrapper -->
 

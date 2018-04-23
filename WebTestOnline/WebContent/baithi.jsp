@@ -31,10 +31,27 @@
 		<!--  hết menu -->
 
 		<div class="noidung">
-			<h2>Danh sách bài thi</h2>
-			</br> <a class="btn btn-primary" href="#"><i class="fa fa-plus 4x"></i>
-				Thêm bài thi</a> </br>
-			<table class="zui-table zui-table-horizontal zui-table-highlight">
+			<div class="tieude">
+				<h3>
+					<i class="fa fa-edit fa-2x"></i>Danh sách bài thi
+				</h3>
+			</div>
+			<div class="noidungcon">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control"
+								placeholder="Search for..."> <span
+								class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+						<!-- /input-group -->
+					</div>
+					<!-- /.col-lg-6 -->
+				</div>
+				<!-- /.row -->
+				<table class="zui-table zui-table-horizontal zui-table-highlight">
 				<thead>
 					<tr>
 						<th>Tên bài thi</th>
@@ -49,10 +66,10 @@
 						<td>Toán-THPT chuyên Bắc Ninh</td>
 						<td>21/4/2018</td>
 						<td>Toán</td>
-						<td><a href="#"><i class="fa fa-eye fa-2x fa-border"
-								style="color: #2980b9"></i></a> <a href="chinhsuaBT.jsp"><i
-								class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a> <a
-							href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a></td>
+						<td><a href="#"><i class="fa fa-eye fa-2x fa-border" style="color: #2980b9"></i></a> 
+							<a href="chinhsuaBT.jsp"><i class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a> 
+							<a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+						</td>
 					</tr>
 					<tr>
 
@@ -94,6 +111,7 @@
 				</tbody>
 			</table>
 
+			</div>
 		</div>
 		<!-- /#wrapper -->
 
