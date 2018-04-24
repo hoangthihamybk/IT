@@ -6,6 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <script src="js/popup.js"></script>
+<style>
+ modal-dialog{
+ padding-top:200px;
+ }
+</style>
 </head>
 <body>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -19,6 +24,10 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="control-label">Tên bộ môn:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên bộ môn...">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Tên lớp:</label>
             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên bộ môn...">
           </div>
           <div class="form-group">

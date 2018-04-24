@@ -9,8 +9,9 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Demo</title>
 
+<title>Demo</title>
+<link href="css/bang.css" rel="stylesheet">
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -30,23 +31,47 @@
 		<!-- menu -->
 		<jsp:include page="menu.jsp"></jsp:include>
 		<!--  hết menu -->
+		<div class="noidung">
+			<div class="tieude">
+				<h3>
+					<i class="fa fa-edit fa-2x"></i>Sửa bộ môn
+				</h3>
+			</div>
+			<div class="noidungcon">
+            <div class = "suabomon">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Tên bài thi</label> <input
+							type="text" class="form-control" id="exampleInputEmail1"
+							placeholder="Tên bộ môn">
+					</div>
+					<div class="form-group" height = "30px">
+						<label for="exampleInputPassword1">Ngày tạo</label> <input
+							type="text" class="form-control" id="exampleInputPassword1"
+							placeholder="Mô tả" >
+					</div>
+					<div class="form-group" height = "30px">
+						<label for="exampleInputPassword1">Bộ Môn</label> <input
+							type="text" class="form-control" id="exampleInputPassword1"
+							placeholder="Mô tả" >
+					</div>
+					<button type="submit" class="btn btn-default">Thêm</button>
+				</form>
+			</div>
+			</div>
+		</div>
+		<!-- /#wrapper -->
 
-		Đây là trang thêm bài thi
+		<!-- JavaScript -->
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/bootstrap.js"></script>
 
-	</div>
-	<!-- /#wrapper -->
-
-	<!-- JavaScript -->
-	<script src="js/jquery-1.10.2.js"></script>
-	<script src="js/bootstrap.js"></script>
-
-	<!-- Page Specific Plugins -->
-	<script
-		src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-	<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-	<script src="js/morris/chart-data-morris.js"></script>
-	<script src="js/tablesorter/jquery.tablesorter.js"></script>
-	<script src="js/tablesorter/tables.js"></script>
-
+		<!-- Page Specific Plugins -->
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+		<script src="js/morris/chart-data-morris.js"></script>
+		<script src="js/tablesorter/jquery.tablesorter.js"></script>
+		<script src="js/tablesorter/tables.js"></script>
 </body>
 </html>

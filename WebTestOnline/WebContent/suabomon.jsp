@@ -34,13 +34,30 @@
 		<div class="noidung">
 			<div class="tieude">
 				<h3>
-					<i class="fa fa-edit fa-2x"></i>Tạo câu hỏi
+					<i class="fa fa-edit fa-2x"></i>Sửa bộ môn
 				</h3>
 			</div>
 			<div class="noidungcon">
-				
-				
-				
+            <div class = "suabomon">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Tên bộ môn</label> <input
+							type="text" class="form-control" id="exampleInputEmail1"
+							placeholder="Tên bộ môn">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Tên Lớp</label> <input
+							type="text" class="form-control" id="exampleInputEmail1"
+							placeholder="Tên bộ môn">
+					</div>
+					<div class="form-group" height = "30px">
+						<label for="exampleInputPassword1">Mô tả</label> <textarea
+							type="text" class="form-control" id="exampleInputPassword1"
+							placeholder="Mô tả" ></textarea>
+					</div>
+					<button type="submit" class="btn btn-default">Lưu</button>
+				</form>
+			</div>
 			</div>
 		</div>
 		<!-- /#wrapper -->

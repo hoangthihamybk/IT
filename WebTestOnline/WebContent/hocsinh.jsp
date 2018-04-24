@@ -52,11 +52,17 @@
 					<!-- /.col-lg-6 -->
 				</div>
 				<!-- /.row -->
+				<h5><i>Chú ý: Admin có thể xóa tài khoản của học sinh nào vi phạm nghiêm trọng nội quy của hệ thống</i></h5>
+				</br>
 				<table class="zui-table zui-table-horizontal zui-table-highlight">
 					<thead>
 						<tr>
 							<th>Số thứ tự</th>
 							<th>Họ tên</th>
+							<th>Giới tính</th>
+							<th>Ngày sinh</th>
+							<th>Số điện thoại</th>
+							<th>Địa chỉ</th>							
 							<th>Email</th>
 							<th>Mật khẩu</th>
 							<th>Xóa</a></th>
@@ -68,34 +74,54 @@
 							<td>Nguyễn Thị A</td>
 							<td>a@gmail.com</td>
 							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>							
 							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
 						</tr>
 						<tr>
-							<td>2</td>
+							<td>1</td>
 							<td>Nguyễn Thị A</td>
 							<td>a@gmail.com</td>
 							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>							
 							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
 						</tr>
 						<tr>
-							<td>3</td>
+							<td>1</td>
 							<td>Nguyễn Thị A</td>
 							<td>a@gmail.com</td>
 							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>							
 							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
 						</tr>
 						<tr>
-							<td>4</td>
+							<td>1</td>
 							<td>Nguyễn Thị A</td>
 							<td>a@gmail.com</td>
 							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>							
 							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
 						</tr>
 						<tr>
-							<td>5</td>
+							<td>1</td>
 							<td>Nguyễn Thị A</td>
 							<td>a@gmail.com</td>
 							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>
+							<td>12345678</td>							
 							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
 						</tr>
 					</tbody>

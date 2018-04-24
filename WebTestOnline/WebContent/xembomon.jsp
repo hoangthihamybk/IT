@@ -56,6 +56,7 @@
 					<thead>
 						<tr>
 							<th>Tên bộ môn</th>
+							<th>Tên lớp</th>
 							<th>Mô tả</th>
 							<th>Tùy chọn</th>
 						</tr>
@@ -63,41 +64,46 @@
 					<tbody>
 						<tr>
 							<td>Toán học</td>
+							<td>123</td>
 							<td>Toán học gồm những bài thi thử với thời gian 90 phút. Bộ
 								đề có 50 câu.</td>
-							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+							<td><a href="suabomon.jsp"><i class="fa fa-edit fa-2x fa-border"
 									style="color: #2980b9"></i></a> <a href="#"><i
 									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
 						</tr>
 						<tr>
 							<td>Hóa học</td>
+							<td>123</td>
 							<td>Hóa học gồm những bài thi thử với thời gian 90 phút. Bộ
 								đề có 50 câu.</td>
-							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+							<td><a href="suabomon.jsp"><i class="fa fa-edit fa-2x fa-border"
 									style="color: #2980b9"></i></a> <a href="#"><i
 									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
 						</tr>
 						<tr>
 							<td>Vậy lý</td>
+							<td>123</td>
 							<td>Vậy lý gồm những bài thi thử với thời gian 90 phút. Bộ
 								đề có 50 câu.</td>
-							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+							<td><a href="suabomon.jsp"><i class="fa fa-edit fa-2x fa-border"
 									style="color: #2980b9"></i></a> <a href="#"><i
 									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
 						</tr>
 						<tr>
 							<td>Sinh học</td>
+							<td>123</td>
 							<td>Sinh học gồm những bài thi thử với thời gian 90 phút. Bộ
 								đề có 50 câu.</td>
-							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+							<td><a href="suabomon.jsp"><i class="fa fa-edit fa-2x fa-border"
 									style="color: #2980b9"></i></a> <a href="#"><i
 									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
 						</tr>
 						<tr>
 							<td>Tiếng anh</td>
+							<td>123</td>
 							<td>Tiếng anh học gồm những bài thi thử với thời gian 90
 								phút. Bộ đề có 50 câu.</td>
-							<td><a href="#"><i class="fa fa-edit fa-2x fa-border"
+							<td><a href="suabomon.jsp"><i class="fa fa-edit fa-2x fa-border"
 									style="color: #2980b9"></i></a> <a href="#"><i
 									class="fa fa-trash-o fa-2x fa-border"></i></a></td>
 						</tr>
