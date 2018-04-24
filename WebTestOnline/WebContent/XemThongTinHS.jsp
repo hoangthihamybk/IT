@@ -34,13 +34,21 @@
 		<div class="noidung">
 			<div class="tieude">
 				<h3>
-					<i class="fa fa-edit fa-2x"></i>Tạo câu hỏi
+					<i class="fa fa-edit fa-2x"></i>Danh sách học sinh
 				</h3>
 			</div>
 			<div class="noidungcon">
-				
-				
-				
+			<div class = "thongtinhs">
+			<h2>Thông tin học sinh</h2>
+			
+			</br>Họ và tên:</br>                        
+			</br>Ngày sinh:</br>                         
+			</br>Giới tính:</br>
+			</br>Số điện thoại liên hệ:</br>
+			</br>Địa chỉ:</br>
+			</br>Địa chỉ hình ảnh:</br>
+			</br></br><a class="btn btn-default" href="hocsinh.jsp" role="button">Đóng</a>		
+			</div>			
 			</div>
 		</div>
 		<!-- /#wrapper -->

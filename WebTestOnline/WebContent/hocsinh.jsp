@@ -42,9 +42,9 @@
 					<div class="col-lg-6">
 						<div class="input-group">
 							<input type="text" class="form-control"
-								placeholder="Search for..."> <span
+								placeholder="Nhập thông tin cần tìm..."> <span
 								class="input-group-btn">
-								<button class="btn btn-default" type="button">Go!</button>
+								<button class="btn btn-default" type="button">Tìm kiếm</button>
 							</span>
 						</div>
 						<!-- /input-group -->
@@ -65,7 +65,7 @@
 							<th>Địa chỉ</th>							
 							<th>Email</th>
 							<th>Mật khẩu</th>
-							<th>Xóa</a></th>
+							<th>Tùy chọn</a></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -78,7 +78,10 @@
 							<td>12345678</td>
 							<td>12345678</td>
 							<td>12345678</td>							
-							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+							<td>
+							<a href="XemThongTinHS.jsp"><i class="fa fa-eye fa-2x fa-border" style="color: green;"></i></a>
+							<a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+							</td>						
 						</tr>
 						<tr>
 							<td>1</td>
@@ -89,7 +92,10 @@
 							<td>12345678</td>
 							<td>12345678</td>
 							<td>12345678</td>							
-							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
+							<td>
+							<a href="XemThongTinHS.jsp"><i class="fa fa-eye fa-2x fa-border" style="color: green;"></i></a>
+							<a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+							</td>
 						</tr>
 						<tr>
 							<td>1</td>
@@ -100,30 +106,11 @@
 							<td>12345678</td>
 							<td>12345678</td>
 							<td>12345678</td>							
-							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Nguyễn Thị A</td>
-							<td>a@gmail.com</td>
-							<td>12345678</td>
-							<td>12345678</td>
-							<td>12345678</td>
-							<td>12345678</td>
-							<td>12345678</td>							
-							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Nguyễn Thị A</td>
-							<td>a@gmail.com</td>
-							<td>12345678</td>
-							<td>12345678</td>
-							<td>12345678</td>
-							<td>12345678</td>
-							<td>12345678</td>							
-							<td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>
-						</tr>
+							<td>
+							<a href="XemThongTinHS.jsp"><i class="fa fa-eye fa-2x fa-border" style="color: green;"></i></a>
+							<a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+							</td>
+						</tr>					
 					</tbody>
 				</table>
 

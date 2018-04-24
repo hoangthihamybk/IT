@@ -41,12 +41,12 @@
             <div class = "suabomon">
 				<form>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Tên bộ môn</label> <input
+						<label for="exampleInputEmail1">Mã bộ môn</label> <input
 							type="text" class="form-control" id="exampleInputEmail1"
 							placeholder="Tên bộ môn">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Tên Lớp</label> <input
+						<label for="exampleInputEmail1">Tên bộ môn</label> <input
 							type="text" class="form-control" id="exampleInputEmail1"
 							placeholder="Tên bộ môn">
 					</div>

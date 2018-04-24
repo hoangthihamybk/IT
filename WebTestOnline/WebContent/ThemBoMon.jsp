@@ -34,19 +34,52 @@
 		<div class="noidung">
 			<div class="tieude">
 				<h3>
-					<i class="fa fa-edit fa-2x"></i>Bài thi
+					<i class="fa fa-edit fa-2x"></i>Bộ Môn
 				</h3>
 			</div>
 			<div class="noidungcon">
-			<div class="noidungbm">
+				<div class="noidungbm">
 					<ul class="nav nav-tabs">
-						<li role="presentation" class="active"><a href="XemBaiThi.jsp">Xem danh sách bài thi</a></li>
-						<li role="presentation"><a href="ThemBaiThi.jsp">Thêm bài thi</a></li>
+						<li role="presentation" class="active"><a href="XemBoMon.jsp">Xem
+								bộ môn</a></li>
+						<li role="presentation"><a href="ThemBoMon.jsp">Thêm bộ
+								môn</a></li>
 						<li role="presentation"><a href="#">...</a></li>
 					</ul>
-
-				</div>	
-				
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">Mã bộ
+									môn:</label> <input type="text" class="form-control"
+									id="recipient-name" placeholder="Nhập mã bộ môn...">
+							</div>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">Tên bộ
+									môn:</label> <input type="text" class="form-control"
+									id="recipient-name" placeholder="Nhập tên bộ môn...">
+							</div>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">Hình
+									minh họa cho bộ môn:</label>
+								<div class="form-group">
+									<input type="file" id="exampleInputFile">
+									<p class="help-block">
+										<i>Hình minh họa không có kích thước quá lớn</i>
+									</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">Mô tả:</label>
+								<TEXTAREA NAME="so_thich_khac" COLS="70" ROWS="5">
+                                
+                                </TEXTAREA>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" src="bomon.jsp">Thêm</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
