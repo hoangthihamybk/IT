@@ -32,26 +32,30 @@
 					<span class="glyphicon glyphicon-pencil"></span> Đăng kí
 				</h1>
 
-				<form action="/" method="post">
+				<form action="Login?action=SignUp" method="post">
 
 
-					<div class="field-wrap">
-						<label> Họ tên<span class="req">*</span>
-						</label> <input type="text" required autocomplete="off" />
-					</div>
+					
 					<div class="field-wrap">
 						<label> Email<span class="req">*</span>
-						</label> <input type="email" required autocomplete="off" />
+						</label> <input type="email" name="email" required autocomplete="off" />
 					</div>
 
 					<div class="field-wrap">
 						<label> Mật khẩu<span class="req">*</span>
-						</label> <input type="password" required autocomplete="off" />
+						</label> <input type="password" name="password" required autocomplete="off" />
+					</div>
+					
+					<div class="form-group">
+					  <label for="sel1">Bạn là ai?:</label>
+					  <select name="role" class="form-control" id="sel1">
+					    <option value="Teacher">Teacher</option>
+					    <option value="Student">Student</option>
+					    <option value="None">Người lạ</option>
+					  </select>
 					</div>
 
-					<button type="submit" class="button button-block" />
-					ĐĂNG KÝ
-					</button>
+					<button type="submit" class="button button-block" /> ĐĂNG KÝ </button>
 
 				</form>
 
@@ -60,16 +64,16 @@
 			<div id="login">
 				<h1>Chào mừng bạn đến với Học Online!</h1>
 
-				<form action="/" method="post">
+				<form action="Login?action=SignIn" method="post">
 
 					<div class="field-wrap">
 						<label> Email <span class="req">*</span>
-						</label> <input type="email" required autocomplete="off" />
+						</label> <input type="email" name="email" required autocomplete="off" />
 					</div>
 
 					<div class="field-wrap">
 						<label> Mật khẩu<span class="req">*</span>
-						</label> <input type="password" required autocomplete="off" />
+						</label> <input type="password" name="password" required autocomplete="off" />
 					</div>
 
 					<p class="forgot">
@@ -77,8 +81,8 @@
 					</p>
 					</br>
 
-					<button class="button button-block" />
-					<span class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP
+					<button type="submit" class="button button-block" />
+						<span class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP
 					</button>
 
 				</form>
