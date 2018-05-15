@@ -133,13 +133,15 @@
 			</div>
 			<div class="noidungcon">
 				<form id="addRole" data-parsley-validate class="form-horizontal form-label-left"  action="../../Role?action=ADD" method="post">
+ 						
  						<div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" id="">Mã quyền<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                <input type="text" id="roleID" name="ID" class="form-control col-md-7 col-xs-12" value="">
+                                                                   
+                      <input type="text" id="roleID" name="ID" class="form-control col-md-7 col-xs-12" value=""> 
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-roleID"></p>
@@ -150,6 +152,7 @@
 							</div>
                         </div>
                       </div>
+                      
  						<div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Role Name <span class="required">*</span>
                         </label>
@@ -167,6 +170,7 @@
 							</div>
                         </div>
                       </div>
+                      
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Describe <span class="required">*</span>
                         </label>
@@ -184,6 +188,7 @@
 							</div>
                         </div>
                       </div>
+                      
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Enable <span class="required">*</span>
                         </label>

@@ -28,8 +28,7 @@ public class SubjectController extends HttpServlet {
 		if (action == null) {
 			System.out.println("none handling");
 		} else if (action.equals("EDIT")) {
-			String id = request.getParameter("subjectID");
-			
+//			String id = request.getParameter("subjectID");			
 			String subjectID = request.getParameter("ID");
 			String subjectName = request.getParameter("subjectName");
 			String linkImage = request.getParameter("linkImage");
@@ -42,7 +41,7 @@ public class SubjectController extends HttpServlet {
 			String enable = request.getParameter("enable");
 			
 			Subject e = new Subject(subjectID, subjectName, linkImage, describe, list, enable);
-			new SubjectDAO().edit(id, e);
+			new SubjectDAO().edit(subjectID, e);
 		} else if (action.equals("DEL")) {
 			String subjectID = request.getParameter("subjectID");
 			UndoDAO.undoSubject.push(SubjectDAO.mapSubject.get(subjectID));

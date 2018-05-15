@@ -140,7 +140,7 @@
 			<div class="noidungcon">
 				<form id="editDetail"  class="form-horizontal form-label-left"  action="../../User?action=EDIT_USER_DETAIL&userID=<%=userID %>" method="post">
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" id="">Full Name<span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" id="">Họ và Tên<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -157,7 +157,7 @@
                         </div>
                       </div>
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Gender <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Giới tính <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row">
@@ -177,7 +177,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Birthday <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ngày sinh <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -194,7 +194,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">Phone Number <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">Số điện thoại <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                            <div class="row">
@@ -211,7 +211,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Address <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Địa chỉ <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                            <div class="row">

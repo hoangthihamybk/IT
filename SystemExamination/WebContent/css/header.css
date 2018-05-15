@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+.noidung{
+	height: 100%;
+	background-color: red;
+}
+.navbar-inverse{
+	background-color: #0072bc;
+}
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: white;
+}

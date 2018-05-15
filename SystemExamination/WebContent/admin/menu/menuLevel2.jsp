@@ -1,4 +1,5 @@
 <%@page import="dao.UserDetailDAO"%>
+<%@page import="dao.UserDAO"%>
 <%@page import="model.UserAccount"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -30,7 +31,7 @@ if(us==null){
 		<ul class="nav navbar-nav side-nav">
 			<li class="active"><a href="index.jsp"><i
 					class="fa fa-dashboard"></i> Dashboard</a></li>
-			<li><a href="../Account/user.jsp"><i class="fa fa-users"></i> Quản lý account</a></li>
+			<li><a href="../Account/user.jsp"><i class="fa fa-users"></i> Quản lý tài khoản</a></li>
 			<li><a href="../Role/role.jsp"><i class="fa fa-users"></i> Quản lý phân quyền</a></li>
 			<li><a href="../Rank/rank.jsp"><i class="fa fa-users"></i> Quản lý xếp hạng</a></li>
 			<li><a href="../Evaluation/evaluation.jsp"><i class="fa fa-users"></i> Quản lý đánh giá</a></li>
@@ -38,9 +39,6 @@ if(us==null){
 			<li><a href="../Classed/classed.jsp"><i class="fa fa-users"></i> Quản lý lớp học</a></li>
 			<li><a href="../Subject/subject.jsp"><i class="fa fa-book"></i> Quản lý môn học</a></li>
 			<li><a href="../ScoreBoard/score.jsp"><i class="fa fa-book"></i> Quản lý bảng điểm</a></li>
-			<li><a href="../bomon.jsp"><i class="fa fa-book"></i> Bộ môn</a></li>
-			<li><a href="../baithi.jsp"><i class="fa fa-file-text-o"></i>
-					Bài thi</a></li>
 			<li><a href="../caidat.jsp"><i class="fa fa-cog"></i> Cài đặt</a></li>
 			<li class="dropdown"><a href="#" class="dropdown-toggle"
 				data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i>
@@ -97,17 +95,19 @@ if(us==null){
 					<li class="divider"></li>
 					<li><a href="#">View All</a></li>
 				</ul></li>
+			
 			<li class="dropdown user-dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					<i class="fa fa-user"></i><%if(us!=null){out.print(UserDetailDAO.mapUserDetail.get(us.getUserID()).getFullname());} %><b class="caret"></b></a>
 				<ul class="dropdown-menu">
-					<li><a href="#"><i class="fa fa-user"></i> Thông tin</a></li>
+					<li><a href="../Account/infoUser.jsp?UserID=<%UserDetailDAO.mapUserDetail.get(us.getUserID()).getUserID();%>"><i class="fa fa-user"></i> Thông tin</a></li>
 					<li><a href="#"><i class="fa fa-envelope"></i> Tin nhắn <span
 							class="badge">7</span></a></li>
 					<li><a href="#"><i class="fa fa-gear"></i> Cài đặt</a></li>
 					<li class="divider"></li>
 					<li><a href="../../Login?action=SignOut"><i class="fa fa-power-off"></i> Đăng xuất</a></li>
 				</ul></li>
+				
 		</ul>
 	</div>
 	<!-- /.navbar-collapse --> </nav>

@@ -5,8 +5,10 @@
 <%@page import="dao.SubjectDAO"%>
 <%@page import="model.Subject"%>
 <%@page import="java.util.Map"%>
+<%@page import="model.UserAccount"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <%		Map<String, Subject> mapSubject = SubjectDAO.mapSubject ;%>
 <%		Map<String, Classed> mapClass = ClassedDAO.mapClassed ;%>
 
@@ -17,6 +19,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<jsp:include page="lib-css/css.jsp" ></jsp:include>
     <jsp:include page="lib-js/js.jsp" ></jsp:include>
+    
 </head>
 <body  class="kiem-tra-thi-thu course-1 lang-vi_utf8" id="kiem-tra-thi-thu-index">
 <div id="fb-root"></div>
@@ -43,6 +46,7 @@
 					<div class="test-item">
 						<div class="item-wrapper clearfix">
 							<div class="order_result" style="text-align: center; font-weight: bold;"><%=sb.getSubjectName() %></div>
+								
 								<div class="test-item-list">
 									<div class="labelcontest">
 										<img src="../images/clock.png" class="activityicon"/> Cơ bản
@@ -61,6 +65,7 @@
 									<%} %>
 									</ul>
 								</div>
+								
 								<div class="test-item-list">
 									<div class="labelcontest">
 										<img src="../images/clock.png" class="activityicon"/> Nâng cao

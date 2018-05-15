@@ -18,8 +18,7 @@
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-<title>Đề kiểm tra thuộc Bài 2. Cực trị của hàm số - Chương
-	trình Toán 12 - HOCMAI</title>
+<title></title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <jsp:include page="lib-css/css.jsp"></jsp:include>
 

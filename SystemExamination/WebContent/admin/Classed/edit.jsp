@@ -167,7 +167,7 @@
                         </div>
                       </div>
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Class Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tên lớp <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row">
@@ -184,7 +184,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Describe <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mô tả <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -206,7 +206,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <label for="sel2">List of Subject (hold shift to select more than one):</label>
+                                 <label for="sel2">Danh sách môn (Giữ phím Shift để chọn nhiều hơn):</label>
 							      <select multiple class="form-control" name="listOfSubject" id="sel2">
 							      	<%Map<String, Subject> mapSubject = SubjectDAO.mapSubject;
 							      	for(Subject s: mapSubject.values()){%>
@@ -248,7 +248,7 @@
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <button type="submit" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Sửa lớp học</button>
+                          <button type="submit" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Sửa thông tin</button>
                         </div>
                       </div>
 

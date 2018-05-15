@@ -18,7 +18,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-	<title>Kiểm tra môn Toán - HOCMAI</title>
+	<title></title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="../css/theme/new2/quiz/style.css" />
 	<jsp:include page="lib-css/css.jsp" ></jsp:include>
@@ -57,6 +57,7 @@
       </div>
      <div class="quiz-attempt-content clearfix">
 		<div class="quiz-name"><%=subjectName %></div><div class="pagination"></div></div>
+        
         <div class="form-wrapper" id="attempt-form-wrapper">
                 <noscript>
                     <center><p><strong>JavaScript phải có khả năng tiếp tục !</strong></p></center>
@@ -89,6 +90,7 @@
 						 <div class="qtext">  <%=q.getContent() %></div>
 					       <div class="ablock clearfix">
 							 <div class="prompt"> </div>
+							    
 							    <table class="answer">
 							        <%List<String> listOfAnswer = q.getListOfAnswer(); %>
 							        <%int r=0;for(int i=0 ; i<listOfAnswer.size();i++){ %>

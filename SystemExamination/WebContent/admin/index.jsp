@@ -23,6 +23,7 @@ if(us==null){
 	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 	<!-- Page Specific CSS -->
 	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 <body> 
@@ -55,12 +56,12 @@ if(us==null){
 									<i class="fa fa-users fa-5x"></i>
 								</div>
 								<div class="col-xs-6 text-right">
-									<p class="announcement-heading">200</p>
-									<p class="announcement-text">DANH SÁCH HỌC SINH</p>
+									<p class="announcement-heading"></br></p>
+									<p class="announcement-text">Quản lý tài khoản</p>
 								</div>
 							</div>
 						</div>
-						<a href="hocsinh.jsp">
+						<a href="Account/user.jsp">
 							<div class="panel-footer announcement-bottom">
 								<div class="row">
 									<div class="col-xs-6">Xem</div>
@@ -77,15 +78,15 @@ if(us==null){
 						<div class="panel-heading">
 							<div class="row">
 								<div class="col-xs-6">
-									<i class="fa fa-book fa-5x"></i>
+									<i class="fa fa-address-card-o fa-5x"></i>
 								</div>
 								<div class="col-xs-6 text-right">
-									<p class="announcement-heading">5</p>
-									<p class="announcement-text">DANH SÁCH BỘ MÔN</p>
+									<p class="announcement-heading"></br></p>
+									<p class="announcement-text">Quản lý phân quyền</p>
 								</div>
 							</div>
 						</div>
-						<a href="bomon.jsp">
+						<a href="Role/role.jsp">
 							<div class="panel-footer announcement-bottom">
 								<div class="row">
 									<div class="col-xs-6">Xem</div>
@@ -102,15 +103,15 @@ if(us==null){
 						<div class="panel-heading">
 							<div class="row">
 								<div class="col-xs-6">
-									<i class="fa fa-file-text-o fa-5x"></i>
+									<i class="fa fa-line-chart fa-5x"></i>
 								</div>
 								<div class="col-xs-6 text-right">
-									<p class="announcement-heading">12</p>
-									<p class="announcement-text">DANH SÁCH BÀI THI</p>
+									<p class="announcement-heading"></br></p>
+									<p class="announcement-text">Quản lý xếp hạng</p>
 								</div>
 							</div>
 						</div>
-						<a href="baithi.jsp">
+						<a href="Rank/rank.jsp">
 							<div class="panel-footer announcement-bottom">
 								<div class="row">
 									<div class="col-xs-6">Xem</div>
@@ -128,15 +129,15 @@ if(us==null){
 						<div class="panel-heading">
 							<div class="row">
 								<div class="col-xs-6">
-									<i class="fa fa-question-circle fa-5x"></i>
+									<i class="fa fa-pie-chart fa-5x"></i>
 								</div>
 								<div class="col-xs-6 text-right">
-									<p class="announcement-heading">56</p>
-									<p class="announcement-text">DANH SÁCH CÂU HỎI</p>
+									<p class="announcement-heading"></br></p>
+									<p class="announcement-text">Quản lý đánh giá</p>
 								</div>
 							</div>
 						</div>
-						<a href="cauhoi.jsp">
+						<a href="Evaluation/evaluation.jsp">
 							<div class="panel-footer announcement-bottom">
 								<div class="row">
 									<div class="col-xs-6">Xem</div>
@@ -152,46 +153,46 @@ if(us==null){
 			<!-- /.row -->
 
 			<div class="col-lg-3">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<div class="row">
-							<div class="col-xs-6">
-								<i class="fa fa-check-square-o fa-5x"></i>
-							</div>
-							<div class="col-xs-6 text-right">
-								<p class="announcement-heading">200</p>
-								<p class="announcement-text">KẾT QUẢ BÀI THI</p>
-							</div>
-						</div>
-					</div>
-					<a href="xemketqua.jsp">
-						<div class="panel-footer announcement-bottom">
+					<div class="panel panel-success">
+						<div class="panel-heading">
 							<div class="row">
-								<div class="col-xs-6">Xem</div>
+								<div class="col-xs-6">
+									<i class="fa fa-sticky-note-o fa-5x"></i>
+								</div>
 								<div class="col-xs-6 text-right">
-									<i class="fa fa-arrow-circle-right"></i>
+									<p class="announcement-heading"></br></p>
+									<p class="announcement-text">Quản lý bài thi</p>
 								</div>
 							</div>
 						</div>
-					</a>
+						<a href="Exam/exam.jsp">
+							<div class="panel-footer announcement-bottom">
+								<div class="row">
+									<div class="col-xs-6">Xem</div>
+									<div class="col-xs-6 text-right">
+										<i class="fa fa-arrow-circle-right"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
-			</div>
 
 			<div class="col-lg-3">
 				<div class="panel panel-info">
 					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-6">
-								<i class="fa fa-cog fa-5x"></i>
+								<i class="fa fa-calendar fa-5x"></i>
 							</div>
 							<div class="col-xs-6 text-right">
-								<p class="announcement-heading">456</p>
-								<p class="announcement-text">CÀI ĐẶT</p>
+								<p class="announcement-heading"></br></p>
+								<p class="announcement-text">Quản lý lớp học</p>
 							</div>
 						</div>
 
 					</div>
-					<a href="caidat.jsp">
+					<a href="Classed/classed.jsp">
 						<div class="panel-footer announcement-bottom">
 							<div class="row">
 								<div class="col-xs-6">Xem</div>
@@ -204,6 +205,59 @@ if(us==null){
 				</div>
 			</div>
 
+            <div class="col-lg-3">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<i class="fa fa-book fa-5x"></i>
+							</div>
+							<div class="col-xs-6 text-right">
+								<p class="announcement-heading"></br></p>
+								<p class="announcement-text">Quản lý môn học</p>
+							</div>
+						</div>
+
+					</div>
+					<a href="Subject/subject.jsp">
+						<div class="panel-footer announcement-bottom">
+							<div class="row">
+								<div class="col-xs-6">Xem</div>
+								<div class="col-xs-6 text-right">
+									<i class="fa fa-arrow-circle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="col-lg-3">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<i class="fa fa-navicon fa-5x"></i>
+							</div>
+							<div class="col-xs-6 text-right">
+								<p class="announcement-heading"></br></p>
+								<p class="announcement-text">Quản lý bảng điểm</p>
+							</div>
+						</div>
+
+					</div>
+					<a href="ScoreBoard/score.jsp">
+						<div class="panel-footer announcement-bottom">
+							<div class="row">
+								<div class="col-xs-6">Xem</div>
+								<div class="col-xs-6 text-right">
+									<i class="fa fa-arrow-circle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 		<!-- /#page-wrapper -->
 

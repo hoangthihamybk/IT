@@ -538,8 +538,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 w3_agileits_footer_grid">
 					<h3>Đăng ký ngay</h3>
-					<form action="#" method="post">
-						<input type="email" name="Email" placeholder="Email" required="">
+					<form action="Login?action=SignUp" method="post">
+						<input type="email" name="email" placeholder="Email" required="">
 						<input type="submit" value=" ">
 					</form>
 				</div>

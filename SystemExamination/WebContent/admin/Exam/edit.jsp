@@ -237,7 +237,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <label for="sel2">List of Subject:</label>
+                                 <label for="sel2">Danh sách môn học:</label>
 							      <select  class="form-control" name="subjectID" id="">
 							       <%Map<String,Subject> mapSubject = SubjectDAO.mapSubject;
 							       	for(Subject e : mapSubject.values()){
@@ -256,7 +256,7 @@
                         </div>
                       </div>
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Examination Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tên bài thi <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row">
@@ -274,7 +274,7 @@
                       </div>
                       
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Describe <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mô tả <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -291,7 +291,7 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Number Of question <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Số câu hỏi <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -307,13 +307,15 @@
 							</div>
                         </div>
                       </div>
+                      
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Time for exam <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Thời gian làm bài <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <input type="time" id="time"  name="time" class="form-control col-md-7 col-xs-12" value="<%=us.getTime()%>">
+<%--                                  <input type="time" id="time"  name="time" class="form-control col-md-7 col-xs-12" value="<%=us.getTime()%>"> --%>
+                                 <input type="number" id="time"  name="time" class="form-control col-md-7 col-xs-12" value=<%=us.getTime() %>>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-time"></p>
@@ -324,6 +326,7 @@
 							</div>
                         </div>
                       </div>
+                      
                      <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Number of people<span class="required">*</span>
                         </label>
@@ -342,7 +345,7 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Link content<span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Link nội dung<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -359,7 +362,7 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Date create<span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ngày tạo<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">

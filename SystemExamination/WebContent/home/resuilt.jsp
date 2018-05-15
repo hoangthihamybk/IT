@@ -11,7 +11,7 @@ String subjectID= ExamDAO.mapExam.get(examID).getSubjectID();
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-	<title>Kết quả kiểm tra Bài 2. Cực trị của hàm số - Chương trình Toán 12 - HOCMAI</title>
+	<title></title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<jsp:include page="lib-css/css.jsp" ></jsp:include>
     <jsp:include page="lib-js/js.jsp" ></jsp:include>

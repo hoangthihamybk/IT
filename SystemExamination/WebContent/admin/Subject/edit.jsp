@@ -176,7 +176,7 @@
                         </div>
                       </div>
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Subject Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tên môn học <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row">
@@ -193,7 +193,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Link Image <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Link ảnh <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -209,8 +209,9 @@
 							</div>
                         </div>
                       </div>
+                      
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Describe <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mô tả <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
@@ -226,13 +227,14 @@
 							</div>
                         </div>
                       </div>
+                      
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">List of examination <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Danh sách bài thi <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <label for="sel2">List of examination (hold shift to select more than one):</label>
+                                 <label for="sel2">Danh sách (Giữ phím Shift để chọn nhiều hơn):</label>
 							        <select multiple class="form-control" name="listOfExamination" id="sel2">
 							       <%Map<String,Exam> mapExam = ExamDAO.mapExam;
 							       	for(Exam e : mapExam.values()){
@@ -275,7 +277,7 @@
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <button type="submit" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Sửa phân quyền</button>
+                          <button type="submit" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Sửa thông tin</button>
                         </div>
                       </div>
 

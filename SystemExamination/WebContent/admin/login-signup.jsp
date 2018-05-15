@@ -45,11 +45,11 @@
 						<label> Mật khẩu<span class="req">*</span>
 						</label> <input type="password" name="password" required autocomplete="off" />
 					</div>
-					
+									
 					<div class="form-group">
 					  <label for="sel1">Bạn là ai?:</label>
 					  <select name="role" class="form-control" id="sel1">					    
-					    <option value="Student">Học sinh</option>
+					    <option value="student">Học sinh</option>
 					    <option value="None">Người lạ</option>
 					  </select>
 					</div>

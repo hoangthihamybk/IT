@@ -29,7 +29,7 @@ public class ClassedController extends HttpServlet {
 		if (action == null) {
 			System.out.println("none handling");
 		} else if (action.equals("EDIT")) {
-			String id = request.getParameter("classID");
+//			String id = request.getParameter("classID");
 			
 			String classID = request.getParameter("ID");
 			String className = request.getParameter("className");
@@ -43,7 +43,7 @@ public class ClassedController extends HttpServlet {
 			String enable = request.getParameter("enable");
 			
 			Classed e = new Classed(classID, className, describe, list, enable);
-			new ClassedDAO().edit(id, e);
+			new ClassedDAO().edit(classID, e);
 		} else if (action.equals("DEL")) {
 			String classedID = request.getParameter("classID");
 			UndoDAO.undoClassed.push(ClassedDAO.mapClassed.get(classedID));

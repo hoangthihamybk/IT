@@ -1,6 +1,7 @@
 package controller.index;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,6 +25,7 @@ public class LoginController extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		String action = request.getParameter("action");
+		System.out.println(action+" act");
 		String url="index.jsp";
 		if (action == null) {
 			System.out.println("Trường hợp chưa có dữ liệu");
@@ -31,6 +33,7 @@ public class LoginController extends HttpServlet {
 			String email = request.getParameter("email");
 			String pass = request.getParameter("password");
 			UserAccount ua = UserDAO.checkLogin(email, pass);
+			System.out.println(ua.getRoleID());
 			if(ua!=null){
 				if(ua.getRoleID().equals("admin")){
 					HttpSession session = request.getSession();
@@ -38,11 +41,13 @@ public class LoginController extends HttpServlet {
 					url="admin/index.jsp";
 					
 				}else if(ua.getRoleID().equals("student")){
+					System.out.println("1");
 					HttpSession session = request.getSession();
-					session.setAttribute("loginadmin", ua);
+					session.setAttribute("login", ua);
 					url="home/index.jsp";
 				
-				}else{
+				}
+				else{
 					System.out.println("ko phai admin");
 					HttpSession session = request.getSession();
 					session.setAttribute("loginindex", ua);
@@ -50,6 +55,7 @@ public class LoginController extends HttpServlet {
 				}
 			}else{
 				url="index.jsp";
+				System.out.println("xam 0");
 			}
 		}else if(action.equals("SignUp")){
 			String email = request.getParameter("email");
@@ -61,16 +67,17 @@ public class LoginController extends HttpServlet {
 			
 			UserAccount ua = new UserAccount(userID, email, password, googleID, facebookID, roles);
 			boolean ok=new UserDAO().add(ua);
-			if(ok){
-				HttpSession session = request.getSession();
-				session.setAttribute("loginindex", ua);
-				url="index.jsp";
-			}else{
-				url="index.jsp";
-			}
-			
+//			if(ok){
+//				HttpSession session = request.getSession();
+//				session.setAttribute("loginindex", ua);
+//				url="index.jsp";
+//			}else{
+//				url="index.jsp";
+//			}
+			System.out.println("xam");
 			
 		}else if(action.equals("SignOut")){
+			System.out.println("xam 2");
 			HttpSession session = request.getSession();
 			session.invalidate();
 			url="index.jsp";
@@ -82,5 +89,7 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
+	public static void main(String[] args) throws IOException {
+		
+	}
 }
