@@ -15,81 +15,79 @@ import model.UserAccount;
 @WebServlet("/Login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public LoginController() {
-        super();
-    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public LoginController() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		String action = request.getParameter("action");
-		System.out.println(action+" act");
-		String url="index.jsp";
+		System.out.println("abcd");
+		String url = "index.jsp";
 		if (action == null) {
 			System.out.println("Trường hợp chưa có dữ liệu");
-		}else if(action.equals("SignIn")){
+		} else if (action.equals("SignIn")) {
 			String email = request.getParameter("email");
 			String pass = request.getParameter("password");
 			UserAccount ua = UserDAO.checkLogin(email, pass);
-			System.out.println(ua.getRoleID());
-			if(ua!=null){
-				if(ua.getRoleID().equals("admin")){
+			String role=ua.getRoleID();
+			System.out.println(role);
+			if (ua != null) {
+				if (ua.getRoleID().equals("admin")) {
 					HttpSession session = request.getSession();
 					session.setAttribute("loginadmin", ua);
-					url="admin/index.jsp";
-					
-				}else if(ua.getRoleID().equals("student")){
-					System.out.println("1");
+					url = "admin/index.jsp";
+
+				} 
+				if ("student".equals(role)) {
+					System.out.println("ok iss student");
 					HttpSession session = request.getSession();
-					session.setAttribute("login", ua);
-					url="home/index.jsp";
-				
-				}
-				else{
+					session.setAttribute("loginstudent", ua);
+					url = "home/index.jsp";
+				} else {
 					System.out.println("ko phai admin");
 					HttpSession session = request.getSession();
 					session.setAttribute("loginindex", ua);
-					url="index.jsp";
+					url = "index.jsp";
 				}
-			}else{
-				url="index.jsp";
-				System.out.println("xam 0");
 			}
-		}else if(action.equals("SignUp")){
+		} else if (action.equals("SignUp")) {
 			String email = request.getParameter("email");
 			String userID = UserDAO.randomUserID(email);
 			String password = request.getParameter("password");
-			String facebookID= request.getParameter("FID");
+			String facebookID = request.getParameter("FID");
 			String googleID = request.getParameter("GID");
-			String roles=request.getParameter("role");
-			
+			String roles = request.getParameter("role");
+
 			UserAccount ua = new UserAccount(userID, email, password, googleID, facebookID, roles);
-			boolean ok=new UserDAO().add(ua);
-//			if(ok){
-//				HttpSession session = request.getSession();
-//				session.setAttribute("loginindex", ua);
-//				url="index.jsp";
-//			}else{
-//				url="index.jsp";
-//			}
+			boolean ok = new UserDAO().add(ua);
+			if (ok) {
+				HttpSession session = request.getSession();
+				session.setAttribute("loginindex", ua);
+				url = "index.jsp";
+			} else {
+				url = "index.jsp";
+			}
 			System.out.println("xam");
-			
-		}else if(action.equals("SignOut")){
+
+		} else if (action.equals("SignOut")) {
 			System.out.println("xam 2");
 			HttpSession session = request.getSession();
 			session.invalidate();
-			url="index.jsp";
+			url = "index.jsp";
 		}
 		response.sendRedirect(url);
-		
+
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
-	public static void main(String[] args) throws IOException {
-		
-	}
+
+
 }
