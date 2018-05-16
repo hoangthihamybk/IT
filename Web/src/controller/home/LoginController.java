@@ -33,18 +33,19 @@ public class LoginController extends HttpServlet {
 		} else if (action.equals("SignIn")) {
 			String email = request.getParameter("email");
 			String pass = request.getParameter("password");
-			UserAccount ua = UserDAO.checkLogin(email, pass);
+			UserAccount ua = UserDAO.checkLogin(email,pass);
 			String role=ua.getRoleID();
 			System.out.println(role);
 			if (ua != null) {
-				if (ua.getRoleID().equals("admin")) {
+				System.out.println("1");
+				if ("admin".equals(role)) {
+					System.out.println(" day la admin ");
 					HttpSession session = request.getSession();
 					session.setAttribute("loginadmin", ua);
 					url = "admin/index.jsp";
-
-				} 
+				} else
 				if ("student".equals(role)) {
-					System.out.println("ok iss student");
+					System.out.println("ok  student");
 					HttpSession session = request.getSession();
 					session.setAttribute("loginstudent", ua);
 					url = "home/index.jsp";
