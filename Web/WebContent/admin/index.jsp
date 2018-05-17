@@ -24,6 +24,9 @@ if(us==null){
 	<!-- Page Specific CSS -->
 	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 	Change style menu -->
+<!--     <link href="../controlcolor/charisma-app.css" rel="stylesheet"> -->
+<!--     <link href="../controlcolor/bootstrap-cerulean.min.css" rel="stylesheet"> -->
 	</head>
 
 <body> 
