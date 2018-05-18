@@ -37,7 +37,7 @@ if(us1==null || us==null){
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					<i class="fa fa-user"></i><%if(us1!=null){out.print(UserDetailDAO.mapUserDetail.get(us1.getUserID()).getFullname());} %><b class="caret"></b></a>
 				<ul class="dropdown-menu">
-					<li><a href="../admin/Account/infoUser.jsp?UserID=<%=us1.getUserID()%>"><i class="fa fa-user"></i> Thông tin</a></li>
+					<li><a href="../home/infouser.jsp?UserID=<%=us1.getUserID()%>"><i class="fa fa-user"></i> Thông tin</a></li>
 					<li><a href="#"><i class="fa fa-envelope"></i> Tin nhắn <span
 							class="badge">7</span></a></li>
 					<li><a href="#"><i class="fa fa-gear"></i> Cài đặt</a></li>

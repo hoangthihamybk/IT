@@ -7,7 +7,7 @@
 <%@page import="model.UserAccount"%>
 <%@page import="java.util.Map"%>
 <% String UserID = request.getParameter("UserID"); 
-	UserDetail us = UserDetailDAO.mapUserDetail.get(UserID);
+	UserDetail us1 = UserDetailDAO.mapUserDetail.get(UserID);
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -44,19 +44,23 @@
 <!-- Page Specific CSS -->
 <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 <!-- datatable bootstrap -->
-
+<link href="css/header.css" rel="stylesheet">
+<jsp:include page="lib-css/css.jsp" ></jsp:include>
+<jsp:include page="lib-js/js.jsp" ></jsp:include>
 </head>
 
 <body>
 	<div id="wrapper">
-		<!-- Sidebar -->
-		<!-- menu -->
-		<jsp:include page="../menu/menuLevel2.jsp"></jsp:include>
+		
+		
+<!-- header  -->
+<jsp:include page="../header/header1.jsp"></jsp:include>
+<!-- header -->
 		<!--  hết menu -->
-		<div class="noidung" style="margin-left:20px">
+		<div class="noidunginfo" style="margin-left:100px">
 			<div class="row" style="margin-left:30px; margin-right:30px">
 				<h2><strong>Thông tin tài khoản</strong>
-					<a href="infoUser.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
+					<a href="user.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
 				</h2>
 				<hr>
 				
@@ -66,11 +70,9 @@
 				<div class= col-sm-11>
 				<div class=row >
 					<div  style="float:right;margin-left:20px">
-						<a href="editDetail.jsp?UserID=<%=UserID%>"><button class="btn btn-lg glyphicon glyphicon-edit btn-success"></button></a>
+						<a href="editinfo.jsp?UserID=<%=UserID%>"><button class="btn btn-lg  btn-success"><span class ="glyphicon glyphicon-edit" aria-hidden="true"></span></button></a>
 					</div>
-					<div style="float:right">
-	                    <a href="../../User?action=DEL&UserID=<%=UserID%>"><button class=" btn btn-lg glyphicon glyphicon-trash btn-danger"></button></a>
-					</div>
+					
 				</div>
 				<table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
@@ -81,28 +83,28 @@
                       </thead>
                       <tbody>
 	                      <tr>
-	                      	<td>Name</td>
-	                       	<td><%=us.getFullname() %></td>
+	                      	<td>Họ và tên</td>
+	                       	<td><%=us1.getFullname() %></td>
 	                      </tr>
 	                      <tr>
-	                      	<td>Gender</td>
-	                       	 <td><%=us.getGender() %></td>
+	                      	<td>Giới tính</td>
+	                       	 <td><%=us1.getGender() %></td>
 	                      </tr>
 	                      <tr>
-	                      	<td>Birthday</td>
-	                       	<td><%=us.getBirthDay() %></td>
+	                      	<td>Ngày sinh</td>
+	                       	<td><%=us1.getBirthDay() %></td>
 	                      </tr>
 	                      <tr>
-	                      	<td>PhoneNumber</td>
-	                        <td><%=us.getPhoneNumber() %></td>
+	                      	<td>Số điện thoại</td>
+	                        <td><%=us1.getPhoneNumber() %></td>
 	                      </tr>
 	                      <tr>
-	                      	<td>Address</td>
-	                     	 <td><%=us.getAddress() %></td>
+	                      	<td>Địa chỉ</td>
+	                     	 <td><%=us1.getAddress() %></td>
 	                      </tr>
 	                      <tr>
 	                      	<td>Avatar</td>
-	                       	<td><img src="<%=us.getAvatar() %>" width="50px" height="50px"></td>
+	                       	<td><img src="<%=us1.getAvatar() %>" width="50px" height="50px"></td>
 	                      </tr>
 	                      	
                       </tbody>
@@ -113,6 +115,7 @@
 			</div>
 		</div>
 		</div>
+		<jsp:include page="../footer/footerlevel1.jsp"></jsp:include>
 		<!-- JavaScript -->
 		<!-- <script src="../../js/jquery-1.10.2.js"></script>
 		<script src="../../js/bootstrap.js"></script> -->

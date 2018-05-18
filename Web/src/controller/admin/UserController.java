@@ -64,7 +64,21 @@ public class UserController extends HttpServlet {
 			UserDetail ud = new UserDetail(userID, fullname, gender, birthday, phoneNumber, address, avatar);
 			new UserDetailDAO().edit(userID, ud);
 			url = "admin/Account/infoUser.jsp?UserID=" + userID;
-		} else if (action.equals("DelAll")) {
+		}
+		else if (action.equals("EDIT_USER_INFO")) {
+			String userID = request.getParameter("userID");
+
+			String fullname = request.getParameter("fullname");
+			String gender = request.getParameter("gender");
+			String birthday = request.getParameter("birthday");
+			String phoneNumber = request.getParameter("phoneNumber");
+			String address = request.getParameter("address");
+			String avatar = request.getParameter("avatar");
+
+			UserDetail ud = new UserDetail(userID, fullname, gender, birthday, phoneNumber, address, avatar);
+			new UserDetailDAO().edit(userID, ud);
+			url = "home/info.jsp?UserID=" + userID;
+		}else if (action.equals("DelAll")) {
 			new UserDAO().delAll();
 		} else if (action.equals("UndoAll")) {
 			new UserDAO().undo();

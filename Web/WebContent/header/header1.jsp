@@ -2,9 +2,9 @@
 <%@page import="model.UserAccount"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%UserAccount us =(UserAccount) session.getAttribute("loginadmin");
+<%
 UserAccount us1 =(UserAccount) session.getAttribute("loginstudent");
-if(us1==null || us==null){
+if(us1==null){
 	response.sendRedirect("../index.jsp");
 }
 %>
@@ -36,7 +36,7 @@ if(us1==null || us==null){
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					<i class="fa fa-user"></i><%if(us1!=null){out.print(UserDetailDAO.mapUserDetail.get(us1.getUserID()).getFullname());} %><b class="caret"></b></a>
 				<ul class="dropdown-menu">
-					<li><a href="../admin/Account/infoUser.jsp?UserID=<%=us1.getUserID()%>"><i class="fa fa-user"></i> Thông tin</a></li>
+					<li><a href="info.jsp?UserID=<%=us1.getUserID()%>"><i class="fa fa-user"></i> Thông tin</a></li>
 					<li><a href="#"><i class="fa fa-envelope"></i> Tin nhắn <span
 							class="badge">7</span></a></li>
 					<li><a href="#"><i class="fa fa-gear"></i> Cài đặt</a></li>
