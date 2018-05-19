@@ -45,6 +45,7 @@
 <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 <!-- datatable bootstrap -->
 <link href="css/header.css" rel="stylesheet">
+
 <jsp:include page="lib-css/css.jsp" ></jsp:include>
 <jsp:include page="lib-js/js.jsp" ></jsp:include>
 </head>
@@ -58,9 +59,9 @@
 <!-- header -->
 		<!--  hết menu -->
 		<div class="noidunginfo" style="margin-left:100px">
-			<div class="row" style="margin-left:30px; margin-right:30px">
+			<div class="row" style="margin-left:30px; margin-right:30px;">
 				<h2><strong>Thông tin tài khoản</strong>
-					<a href="user.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
+					<a href="index.jsp" style="float: right;"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
 				</h2>
 				<hr>
 				
@@ -69,8 +70,8 @@
 			<div class=row>
 				<div class= col-sm-11>
 				<div class=row >
-					<div  style="float:right;margin-left:20px">
-						<a href="editinfo.jsp?UserID=<%=UserID%>"><button class="btn btn-lg  btn-success"><span class ="glyphicon glyphicon-edit" aria-hidden="true"></span></button></a>
+					<div  style="float:right;margin-left:20px; margin-bottom:13px;">
+						<a href="editinfo.jsp?UserID=<%=UserID%>"><button class="btn btn-lg  btn-success">Sửa</button></a>
 					</div>
 					
 				</div>

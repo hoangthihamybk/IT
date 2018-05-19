@@ -227,7 +227,23 @@
 							</div>
                         </div>
                       </div>
-                     
+                     <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Avatar <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="row">
+                              <label for="exampleInputFile">File input</label>
+                              <input type="file" id="exampleInputFile" name="avatar">
+                              
+                               <div class="col-sm-2">
+                                <p id="icon-address"></p>
+                               </div>
+							</div>
+							<div class="row">
+							    <p style="color: red" id="error-address"></p>	
+							</div>
+                        </div>
+                      </div>
                    
                       <div class="ln_solid"></div>
                       <div class="form-group">
@@ -240,6 +256,7 @@
 				
 				
 			</div>
+		</div>
 		</div>
 		<!-- datatable bootstrap -->
 	    <!-- FastClick -->

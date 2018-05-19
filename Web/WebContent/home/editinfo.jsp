@@ -6,7 +6,8 @@
 <%@page import="dao.UserDAO"%>
 <%@page import="model.UserAccount"%>
 <%@page import="java.util.Map"%>
-<% String userID = request.getParameter("UserID"); 
+<% 
+String userID = request.getParameter("UserID"); 
 	UserDetail us1 = UserDetailDAO.mapUserDetail.get(userID);
 %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -147,12 +148,12 @@
 		<div class="noidungeditinfo" style="margin-top:60px; ">
 			<div class="row" style="margin-left:30px; margin-right:30px">
 				<h2><strong>Sửa thông tin tài khoản</strong>
-				<a href="infoUser.jsp?userID=<%=userID%>" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
+				<a href="index.jsp?userID=<%=userID%>" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
 				</h2>
 				<hr>
 			</div>
 			<div class="noidungcon">
-				<form id="editDetail"  class="form-horizontal form-label-left"  action="../../User?action=EDIT_USER_INFO&userID=<%=userID %>" method="post">
+				<form id="editDetail"  class="form-horizontal form-label-left"  action="../../User?action=EditInfo&userID=<%=userID %>" method="post">
  						<div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" id="">Họ và Tên<span class="required">*</span>
                         </label>

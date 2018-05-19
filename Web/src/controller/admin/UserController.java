@@ -52,6 +52,7 @@ public class UserController extends HttpServlet {
 			UserAccount us = new UserAccount(userID, email, password, "none", "none", role);
 			new UserDAO().add(us);
 		} else if (action.equals("EDIT_USER_DETAIL")) {
+		System.out.println("đã tìm thây");
 			String userID = request.getParameter("userID");
 
 			String fullname = request.getParameter("fullname");
@@ -65,7 +66,8 @@ public class UserController extends HttpServlet {
 			new UserDetailDAO().edit(userID, ud);
 			url = "admin/Account/infoUser.jsp?UserID=" + userID;
 		}
-		else if (action.equals("EDIT_USER_INFO")) {
+		else if (action.equals("EditInfo")) {
+			System.out.println("editinfo");
 			String userID = request.getParameter("userID");
 
 			String fullname = request.getParameter("fullname");
@@ -77,8 +79,9 @@ public class UserController extends HttpServlet {
 
 			UserDetail ud = new UserDetail(userID, fullname, gender, birthday, phoneNumber, address, avatar);
 			new UserDetailDAO().edit(userID, ud);
-			url = "home/info.jsp?UserID=" + userID;
-		}else if (action.equals("DelAll")) {
+			url = "home/index.jsp?UserID=" + userID;
+		}
+		else if (action.equals("DelAll")) {
 			new UserDAO().delAll();
 		} else if (action.equals("UndoAll")) {
 			new UserDAO().undo();
