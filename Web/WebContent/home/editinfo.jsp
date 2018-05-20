@@ -143,7 +143,7 @@ String userID = request.getParameter("UserID");
 	<div id="wrapper">
 		<!-- Sidebar -->
 		<!-- menu -->
-		<jsp:include page="../header/header1.jsp"></jsp:include>
+		<jsp:include page="../header/header2.jsp"></jsp:include>
 		<!--  hết menu -->
 		<div class="noidungeditinfo" style="margin-top:60px; ">
 			<div class="row" style="margin-left:30px; margin-right:30px">
@@ -153,7 +153,7 @@ String userID = request.getParameter("UserID");
 				<hr>
 			</div>
 			<div class="noidungcon">
-				<form id="editDetail"  class="form-horizontal form-label-left"  action="../../User?action=EditInfo&userID=<%=userID %>" method="post">
+				<form id="editDetail"  class="form-horizontal form-label-left"  action="../../User?action=edit&userID=<%=userID %>" method="post">
  						<div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" id="">Họ và Tên<span class="required">*</span>
                         </label>

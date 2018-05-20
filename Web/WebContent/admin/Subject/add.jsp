@@ -162,7 +162,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                <input type="text" id="SubjectID" name="subjectID" class="form-control col-md-7 col-xs-12" value="">
+                                <input type="text" id="SubjectID" name="subjectID" class="form-control col-md-7 col-xs-12" value=""><i>(VD: VL12)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-SubjectID"></p>
@@ -174,12 +174,12 @@
                         </div>
                       </div>
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Subject Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tên môn <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row">
                                <div class="col-sm-8">
-                                <input type="text" id="SubjectName"  name="subjectName" class="form-control col-md-7 col-xs-12" value="">
+                                <input type="text" id="SubjectName"  name="subjectName" class="form-control col-md-7 col-xs-12" value=""><i>(VD: Vật lý 12)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-SubjectName"></p>
@@ -196,7 +196,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <input id="linkImage"  name="linkImage" class="form-control col-md-7 col-xs-12" >
+                                 <input id="linkImage"  name="linkImage" class="form-control col-md-7 col-xs-12" ><i>(VD: ../img/vatly12.jpg)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-linkImage"></p>
@@ -208,12 +208,12 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Describe <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mô tả <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <textarea id="describe"  name="describe" class="form-control col-md-7 col-xs-12" ></textarea>
+                                 <textarea id="describe"  name="describe" class="form-control col-md-7 col-xs-12" ></textarea><i>(VD: Môn Vật lý lớp 12)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-describe"></p>

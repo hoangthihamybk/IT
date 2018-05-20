@@ -55,7 +55,7 @@
 		
 		
 <!-- header  -->
-<jsp:include page="../header/header1.jsp"></jsp:include>
+<jsp:include page="../header/header2.jsp"></jsp:include>
 <!-- header -->
 		<!--  hết menu -->
 		<div class="noidunginfo" style="margin-left:100px">

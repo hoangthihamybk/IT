@@ -296,7 +296,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <input type="number" id="numberOfQuestion"  name="numberOfQuestion" class="form-control col-md-7 col-xs-12" value=<%=us.getNumberOfQuestions() %>>
+                                 <input type="text" id="numberOfQuestion"  name="numberOfQuestion" class="form-control col-md-7 col-xs-12" value=<%=us.getNumberOfQuestions() %>>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-numberOfQuestion"></p>
@@ -398,7 +398,7 @@
 							</div>
                         </div>
                       </div>
-                     
+                      
                    
                      
                    

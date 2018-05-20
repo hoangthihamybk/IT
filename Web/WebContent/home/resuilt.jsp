@@ -68,7 +68,7 @@ String subjectID= ExamDAO.mapExam.get(examID).getSubjectID();
                                         <div class="text-center quiz-score">
                                             <span>0</span>/100</div>
                                         <div class="text-center review">
-                                            <div style="text-align: justify">Có lẽ bài học này là một thử thách thực sự với bạn rồi. Bạn cần học lại bài này trong <a title="Bài 2. Cực đại và cực tiểu" href="http://hocmai.vn/mod/ebook/view.php?id=2275&sec=1605" target="_blank">sách giáo khoa</a> hoặc liên hệ với tổng đài thông tin 19006933 của <a style="color: rgb(0,0,255)" href="http://www.hocmai.vn/">Hocmai.vn</a> để được tư vấn. <a style="color: rgb(0,0,255)" href="http://www.hocmai.vn/">Hocmai.vn</a> sẽ đồng hành cùng bạn để vượt qua thử thách này.<br /></div>                                        </div>
+                                            <div style="text-align: justify">Có lẽ bài học này là một thử thách thực sự với bạn rồi. Bạn cần học lại bài này trong <a title="Bài 2. Cực đại và cực tiểu" href="http://hocmai.vn/mod/ebook/view.php?id=2275&sec=1605" target="_blank">sách giáo khoa</a> hoặc liên hệ với tổng đài thông tin 19006933 của <a style="color: rgb(0,0,255)" href="http://www.hocmai.vn/">Hoconline.vn</a> để được tư vấn. <a style="color: rgb(0,0,255)" href="http://www.hocmai.vn/">Hoconline.vn</a> sẽ đồng hành cùng bạn để vượt qua thử thách này.<br /></div>                                        </div>
                                         <div class="hr-line"></div>
                                         <ul class="other-info">
                                             <li> <div class="row">

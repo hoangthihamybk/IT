@@ -29,7 +29,7 @@ public class SubjectController extends HttpServlet {
 			System.out.println("none handling");
 		} else if (action.equals("EDIT")) {
 //			String id = request.getParameter("subjectID");			
-			String subjectID = request.getParameter("ID");
+			String subjectID = request.getParameter("subjectID");
 			String subjectName = request.getParameter("subjectName");
 			String linkImage = request.getParameter("linkImage");
 			String describe = request.getParameter("describe");

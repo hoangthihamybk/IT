@@ -10,7 +10,7 @@
 <%String examID = request.getParameter("examID");
   String subjectName= SubjectDAO.mapSubject.get(ExamDAO.mapExam.get(examID).getSubjectID()).getSubjectName();
   String subjectID= ExamDAO.mapExam.get(examID).getSubjectID();
-  String pathLoadFile=request.getServletContext().getRealPath("/")+"/file/exam/"+subjectID+"/"+subjectID+".txt";
+  String pathLoadFile=request.getServletContext().getRealPath("/")+"/file/exam/"+subjectID+"/"+examID+".txt";
   String eval= request.getParameter("eval");
   DeThi dt = new QuestionDAO(pathLoadFile).createDeThi(eval, Integer.parseInt(ExamDAO.mapExam.get(examID).getNumberOfQuestions()));
 %>

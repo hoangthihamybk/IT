@@ -33,7 +33,7 @@ public class ExamDAO implements ObjectDAO {
 		}
 		return mapTemp;
 	}
-
+	
 	private static Map<String, Exam> loadData() {
 		Map<String, Exam> mapTemp = new HashMap<>();
 		try {
@@ -50,6 +50,7 @@ public class ExamDAO implements ObjectDAO {
 				String LinkContent = rs.getString(9);
 				String DateCreate = rs.getString(10);
 				String Enable = rs.getString(11);
+			
 				Exam ua = new Exam(ExamID, ClassID, SubjectID, ExamName, Describe, NumberOfQuestions, Time,
 						NumberOfPeople, LinkContent, DateCreate, Enable);
 				mapTemp.put(ExamID, ua);
@@ -83,6 +84,7 @@ public class ExamDAO implements ObjectDAO {
 			statement.setString(9, r.getLinkContent());
 			statement.setString(10, r.getDateCreate());
 			statement.setString(11, r.getEnable());
+			
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -104,7 +106,7 @@ public class ExamDAO implements ObjectDAO {
 					+ "',SubjectID='" + r.getSubjectID() + "',ExamName='" + r.getExamName() + "',Describe='"
 					+ r.getDescribe() + "',NumberOfQuestions='" + r.getNumberOfQuestions() + "',Time='" + r.getTime()
 					+ "',NumberOfPeople='" + r.getNumberOfPeople() + "',LinkContent='" + r.getLinkContent()
-					+ "',DateCreate='" + r.getDateCreate() + "',Enable='" + r.getEnable() + "' where ExamID='" + ExamID
+					+ "',DateCreate='" + r.getDateCreate() + "',Enable='" + r.getEnable()  +"' where ExamID='" + ExamID
 					+ "'";
 
 			PreparedStatement preparedStatementa = connection.prepareStatement(sqla);
@@ -148,9 +150,10 @@ public class ExamDAO implements ObjectDAO {
 	}
 
 	public static void main(String[] args) {
-		String id = "EXl-CB-D012";
-		StringTokenizer  t = new StringTokenizer(id, "-");
-		System.out.println(t.nextToken());
-		System.out.println(t.nextToken());
+//		String id = "EXl-CB-D012";
+//		StringTokenizer  t = new StringTokenizer(id, "-");
+//		System.out.println(t.nextToken());
+//		System.out.println(t.nextToken());
+		
 	}
 }

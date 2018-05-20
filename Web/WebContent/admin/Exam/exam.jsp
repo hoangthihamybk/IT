@@ -22,7 +22,7 @@ if(us==null){
 <meta name="author" content="">
 
 
-<title>Quản lý môn học</title>
+<title>Quản lý bài thi</title>
 
 <!-- datatable bootstrap -->
   	<!-- Bootstrap -->
@@ -57,7 +57,7 @@ if(us==null){
 		<!--  hết menu -->
 		<div class="noidung">
 			<div class="tieude">
-				<h3> <i class="fa fa-edit fa-1x"></i>Danh sách môn học </h3>
+				<h3> <i class="fa fa-edit fa-1x"></i>Danh sách bài thi </h3>
 			</div>
 			<div class="noidungcon">
 				<div class="row">
@@ -85,7 +85,7 @@ if(us==null){
                           <th>Subject Name</th>
                           <th>Exam Name</th>
                           <th>Describe</th>
-                          <th>Date Create</th>
+                          <th>DateCreate</th>
                           <th>Edit</th>
                           <th>Delete</th>
                         </tr>
@@ -112,6 +112,7 @@ if(us==null){
 				</div>
 				
 			</div>
+		</div>
 		</div>
 		<!-- /#wrapper -->
 

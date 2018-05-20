@@ -16,7 +16,7 @@ public class Exam {
 	public Exam() {
 		super();
 	}
-	
+
 	public Exam(String examID, String classID, String subjectID, String examName, String describe,
 			String numberOfQuestions, String time, String numberOfPeople, String linkContent, String dateCreate,
 			String enable) {
@@ -130,9 +130,7 @@ public class Exam {
 		return "Exam [ExamID=" + ExamID + ", ClassID=" + ClassID + ", SubjectID=" + SubjectID + ", ExamName=" + ExamName
 				+ ", Describe=" + Describe + ", NumberOfQuestions=" + NumberOfQuestions + ", Time=" + Time
 				+ ", NumberOfPeople=" + NumberOfPeople + ", LinkContent=" + LinkContent + ", DateCreate=" + DateCreate
-				+ ", Enable=" + Enable + "]";
+				+ ", Enable=" + Enable + ",]";
 	}
 
-	
-	
 }

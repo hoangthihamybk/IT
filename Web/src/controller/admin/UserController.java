@@ -66,7 +66,7 @@ public class UserController extends HttpServlet {
 			new UserDetailDAO().edit(userID, ud);
 			url = "admin/Account/infoUser.jsp?UserID=" + userID;
 		}
-		else if (action.equals("EditInfo")) {
+		else if (action.equals("edit")) {
 			System.out.println("editinfo");
 			String userID = request.getParameter("userID");
 

@@ -65,7 +65,7 @@ public class SubjectDAO implements ObjectDAO{
 
 		try {
 			Connection connection = ConnectDB.getConnect();
-			String sqla = "update Subject set SubjectID='" + r.getSubjectID() + "',SubjectName=N'" + r.getSubjectID() + "',LinkImage='"
+			String sqla = "update Subject set SubjectID='" + r.getSubjectID() + "',SubjectName=N'" + r.getSubjectName() + "',LinkImage='"
 					+ r.getLinkImage() + "',Describe=N'" + r.getDescribe() + "',ListOfExamination='" + r.getListOfExaminationID() + "',Enable='" + r.getEnable()  + "' where SubjectID='" + SubjectID + "'";
 
 			PreparedStatement preparedStatementa = connection.prepareStatement(sqla);

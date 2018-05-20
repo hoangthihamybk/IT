@@ -199,7 +199,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                <input type="text" id="examID" name="examID" class="form-control col-md-7 col-xs-12" value="">
+                                <input type="text" id="examID" name="examID" class="form-control col-md-7 col-xs-12" value=""><i>(VD: EXSH-CB-12-DSH01)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-examID"></p>
@@ -258,12 +258,12 @@
                         </div>
                       </div>
  						<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Examination Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tên bài thi <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="row">
                                <div class="col-sm-8">
-                                <input type="text" id="examName"  name="examName" class="form-control col-md-7 col-xs-12" value="">
+                                <input type="text" id="examName"  name="examName" class="form-control col-md-7 col-xs-12" value=""><i>(VD: Kiểm tra 15 phút)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-examName"></p>
@@ -276,12 +276,12 @@
                       </div>
                       
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Describe <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Mô tả <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <textarea id="describe"  name="describe" class="form-control col-md-7 col-xs-12" ></textarea>
+                                 <textarea id="describe"  name="describe" class="form-control col-md-7 col-xs-12" ></textarea><i>(VD: Gen, Mã di chuyền và quá trình nhân đôi ADN)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-describe"></p>
@@ -293,12 +293,12 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Number Of question <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Số câu hỏi <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <input type="number" id="numberOfQuestion"  name="numberOfQuestion" class="form-control col-md-7 col-xs-12" >
+                                 <input type="number" id="numberOfQuestion"  name="numberOfQuestion" class="form-control col-md-7 col-xs-12" ><i>(VD: 15)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-numberOfQuestion"></p>
@@ -310,12 +310,13 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Time for exam <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Thời gian làm bài <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <input type="time" id="time"  name="time" class="form-control col-md-7 col-xs-12" >
+                                 
+                               <input type="number" id="time"  name="time" class="form-control col-md-7 col-xs-12" ><i>(VD: 15)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-time"></p>
@@ -327,12 +328,12 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Number of people<span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Số người thi<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                 <input type="number" id="numberOfPeople"  name="numberOfPeople" class="form-control col-md-7 col-xs-12" >
+                                 <input type="number" id="numberOfPeople"  name="numberOfPeople" class="form-control col-md-7 col-xs-12" ><i>(VD: 50)</i>
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-numberOfPeople"></p>
@@ -361,7 +362,7 @@
                         </div>
                       </div>
                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Date create<span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ngày tạo<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">

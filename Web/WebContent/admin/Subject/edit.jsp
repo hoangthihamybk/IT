@@ -164,7 +164,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <div class="row">
                                <div class="col-sm-8">
-                                <input type="text" id="SubjectID" name="ID" class="form-control col-md-7 col-xs-12" value="<%=us.getSubjectID()%>">
+                                <input type="text" id="SubjectID" name="subjectID" class="form-control col-md-7 col-xs-12" value="<%=us.getSubjectID()%>">
                                </div>
                                <div class="col-sm-2">
                                 <p id="icon-SubjectID"></p>

@@ -42,8 +42,9 @@ public class ExaminationController extends HttpServlet {
 			String linkContent = request.getParameter("linkContent");	
 			String dateCreate = request.getParameter("dateCreate");	
 			String enable = request.getParameter("enable");	
+			String maDeThi = request.getParameter("maDeThi");
 
-			Exam r = new Exam(examID, classID, subjectID, examName, describe,numberOfQuestions,time,numberOfPeople,linkContent,dateCreate,enable);
+			Exam r = new Exam(examID, classID, subjectID, examName, describe,numberOfQuestions,time,numberOfPeople,linkContent,dateCreate,enable,maDeThi);
 			new ExamDAO().edit(id, r);
 		} else if (action.equals("DEL")) {
 			String examID = request.getParameter("examID");
