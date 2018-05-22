@@ -11,7 +11,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
 
 import model.ConnectDB;
 import model.ConstDefine;
@@ -20,33 +23,34 @@ import model.DeThi;
 import model.Question;
 
 public class QuestionDAO {
-//	static String pathLoadFile=System.getProperty("user.dir") + "";
+	// static String pathLoadFile=System.getProperty("user.dir") + "";
 	static String pathLoadFile;
-//	static String pathLoadFile= "/src/file/exam/content/sinh/chsinh.txt";
+	// static String pathLoadFile= "/src/file/exam/content/sinh/chsinh.txt";
 	static String charset;
 	static String delemited;
 
-	public QuestionDAO(){
-		
+	public QuestionDAO() {
+
 	}
+
 	public QuestionDAO(String pathLoadFile) throws IOException {
 		super();
 		charset = "Unicode";
 		delemited = "\t";
-		QuestionDAO.pathLoadFile = pathLoadFile ;
+		QuestionDAO.pathLoadFile = pathLoadFile;
 
 	}
 
 	public Map<String, ContentExam> loadQuestionFromDatabase(String maDeThi) {
 		Map<String, ContentExam> mapTemp = new HashMap<>();
 		try {
-			ResultSet rs = new ConnectDB().selectData("select * from ContentExam where maDeThi="+maDeThi);
+			ResultSet rs = new ConnectDB().selectData("select * from ContentExam where maDeThi=" + maDeThi);
 			while (rs.next()) {
 				String id = rs.getString(1);
 				String questionID = rs.getString(2);
 				String answer = rs.getString(3);
 				String evaluation = rs.getString(4);
-				ContentExam ce  = new ContentExam(id, questionID, answer, evaluation);
+				ContentExam ce = new ContentExam(id, questionID, answer, evaluation);
 				mapTemp.put(questionID, ce);
 			}
 		} catch (Exception e) {
@@ -115,6 +119,7 @@ public class QuestionDAO {
 	public Map<String, Question> getListOfQuestion(String evaluation, int num) throws IOException {
 		Map<String, Question> map = new HashMap<>();
 		File sf = new File(pathLoadFile);
+
 		if (!sf.exists())
 			System.out.println("File not exists!!!");
 		try {
@@ -146,7 +151,9 @@ public class QuestionDAO {
 				q.setListOfAnswer(listOfAnswer);
 				if (ID.substring(ID.indexOf("-") + 1, ID.length()).equals(evaluation)) {
 					map.put(ID, q);
+
 				}
+
 				if (map.size() == num) {
 					break;
 				}
@@ -162,6 +169,16 @@ public class QuestionDAO {
 
 	}
 
+	public String getkey(Map<String, Question> map) {
+		Random rd = new Random();
+		List<String> list = new ArrayList<>();
+		for (String mapa : map.keySet()) {
+			list.add(mapa);
+		}
+		int count = rd.nextInt(list.size());
+		return list.get(count);
+	}
+
 	public DeThi createDeThi(String evaluation, int numberOfQuestion) throws IOException {
 		int numDE = 0, numKHO = 0, numTB = 0;
 		switch (evaluation) {
@@ -174,8 +191,8 @@ public class QuestionDAO {
 			 * number of question for DE is 40% number of question for KHO is
 			 * 30% number of question for TB is 30%
 			 */
-			numKHO = (int) ((numberOfQuestion * 30)/100);
-			numTB = (int) ((numberOfQuestion * 30)/100);
+			numKHO = (int) ((numberOfQuestion * 30) / 100);
+			numTB = (int) ((numberOfQuestion * 30) / 100);
 			numDE = numberOfQuestion - numKHO - numTB;
 			break;
 		case ConstDefine.TRUNG_BINH:
@@ -183,16 +200,23 @@ public class QuestionDAO {
 			 * number of question for DE is 40% number of question for KHO is
 			 * 10% number of question for TB is 50%
 			 */
-			numKHO = (int) ((numberOfQuestion * 10)/100);
-			numTB = (int) ((numberOfQuestion * 50)/100);
+			numKHO = (int) ((numberOfQuestion * 10) / 100);
+			numTB = (int) ((numberOfQuestion * 50) / 100);
 			numDE = numberOfQuestion - numKHO - numTB;
 			break;
 
 		default:
 			break;
 		}
-//		System.out.println(numDE);System.out.println(numTB);System.out.println(numKHO);
+		// System.out.println(numDE);System.out.println(numTB);System.out.println(numKHO);
 		return createDeThiForEvaluation(numDE, numTB, numKHO);
+	}
+
+	public Map<String, Question> getListOfQuestionRandom(Map<String, Question> mapq) {
+		Map<String, Question> mapRe = new HashMap<>();
+		String k = getkey(mapq);
+		mapRe.put(k, mapq.get(k));
+		return mapRe;
 	}
 
 	private DeThi createDeThiForEvaluation(int numDE, int numTB, int numKHO) throws IOException {
@@ -202,35 +226,44 @@ public class QuestionDAO {
 		dt.setNumberAnswerForOneQuestion(4 + "");
 		dt.setSubjectID("SINH12");
 		List<Question> listOfQuestion = new ArrayList<>();
-		listOfQuestion.addAll(getListOfQuestion(ConstDefine.DE, numDE).values());
-		listOfQuestion.addAll(getListOfQuestion(ConstDefine.KHO, numKHO).values());
-		listOfQuestion.addAll(getListOfQuestion(ConstDefine.TRUNG_BINH, numTB).values());
+		Map<String,Question> mapq = (Map<String, Question>) getListOfQuestion(ConstDefine.DE, numDE).values();
+		Map<String,Question> mapq1 = (Map<String, Question>) getListOfQuestion(ConstDefine.KHO, numKHO).values();
+		Map<String,Question> mapq2 = (Map<String, Question>) getListOfQuestion(ConstDefine.TRUNG_BINH, numTB).values();
+		listOfQuestion.addAll(getListOfQuestionRandom(mapq).values());
+		listOfQuestion.addAll(getListOfQuestionRandom(mapq1).values());
+		listOfQuestion.addAll(getListOfQuestionRandom(mapq2).values());
 		dt.setListOfQuestion(listOfQuestion);
-		
-		boolean ok=new DeThiDAO().addContentExam(dt);
-		if(!ok) return null;
+
+		System.out.println("new random ");
+		System.out.println(listOfQuestion);
+		boolean ok = new DeThiDAO().addContentExam(dt);
+		if (!ok)
+			return null;
 		return dt;
 	}
 
+	
+	
 	private int ranDomMDT(int i) {
 		return new Random().nextInt(2000);
 	}
-	
-	public int checkAnswer(Map<String,String> mapAnswer, Map<String, ContentExam> mapQuestion){
-		int numberAnswerRight=0;
-		for(ContentExam ce : mapQuestion.values()){
+
+	public int checkAnswer(Map<String, String> mapAnswer, Map<String, ContentExam> mapQuestion) {
+		int numberAnswerRight = 0;
+		for (ContentExam ce : mapQuestion.values()) {
 			String q = mapAnswer.get(ce.getQuestionID());
-			if(ce.getAnswer().equals(q)) numberAnswerRight++;
+			if (ce.getAnswer().equals(q))
+				numberAnswerRight++;
 		}
 		return numberAnswerRight;
 	}
-	
-	public double resuiltScoreForExam(Map<String,String> mapAnswer, Map<String, ContentExam> mapQuestion){
-		double answerRight = checkAnswer(mapAnswer,mapQuestion);
-		double test=((double)answerRight/mapQuestion.size())*10;
-		return (double)Math.round(test*100)/100;
+
+	public double resuiltScoreForExam(Map<String, String> mapAnswer, Map<String, ContentExam> mapQuestion) {
+		double answerRight = checkAnswer(mapAnswer, mapQuestion);
+		double test = ((double) answerRight / mapQuestion.size()) * 10;
+		return (double) Math.round(test * 100) / 100;
 	}
-	
+
 	public static void main(String[] args) throws IOException {
 		// String pathLoadFile = System.getProperty("user.dir") +
 		// "/src/file/exam/content/sinh/sinh.txt";

@@ -15,6 +15,44 @@ if(us1==null || us==null){
 <link href="../css/header.css" rel="stylesheet">
 <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 <title>Insert title here</title>
+
+<!-- import icon font awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Import thư viện JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 200;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+</script>
+<div title="Về đầu trang" onmouseover="this.style.color='#590059'" onmouseout="this.style.color='#004993'" id="top-up">
+<i class="fa fa-caret-square-o-up"></i></div>
+<style>
+#top-up {
+background:none;
+font-size: 3em;
+text-shadow:0px 0px 5px #c0c0c0;
+cursor: pointer;
+position: fixed;
+z-index: 9999;
+color:#004993;
+bottom: 20px;
+right: 15px;
+display: none;
+}
+</style>
+
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">

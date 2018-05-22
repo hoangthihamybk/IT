@@ -84,7 +84,7 @@
                     <div class="body">
 					<%int count=0;for(Question q : dt.getListOfQuestion()){count++; %>
 					<div id="<%=q.getQuestionID() %>" class="que multichoice clearfix">
-					  <div class="info"> <span class="firstletter"><%=count %>.</span> </div>
+					  <div class="info" style="margin-top: -2px;"> <span class="firstletter"><%=count %>.</span> </div>
 					  <div class="content">
 						 <div class="qtext">  <%=q.getContent() %></div>
 					       <div class="ablock clearfix">
@@ -97,7 +97,7 @@
 								      <td class="c0 control ">
 								          <input  id="<%=q.getQuestionID()%>" name="<%=q.getQuestionID()%>"  type="radio" value="<%=new MethodStringHandeling().getNameAnswer(i) %>"  />
 									  </td>
-								       <td class="c1 text ">
+								       <td class="c1 text " style="padding-top:14px;">
 								           <label for="<%=q.getQuestionID()%>"> <span class='under_an'><%=new MethodStringHandeling().getNameAnswer(i) %></span>. <%=listOfAnswer.get(i)%></label>
 								       </td>
 								        <td class="c0 feedback"> </td>
@@ -138,7 +138,7 @@ var ec_quiz_finish = ec_page_start + 900000;
 
 </script>
 <script language="javascript" type="text/javascript" src="https://hocmai.vn/mod/quiz/timer.js?v=1.1"></script>
-<div id="timer" style="display:none;position: absolute">
+<div id="timer" style="display:none;margin-left:20px;margin-left:20px;">
 <!--EDIT BELOW CODE TO YOUR OWN MENU-->        
 	<div class="form-clock">          
 		<form id="clock">

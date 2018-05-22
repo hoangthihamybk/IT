@@ -80,7 +80,7 @@
 									<form id="clock">
 										<span class="clock-title">Thời gian hiện tại:</span> <input
 											onfocus="blur()" type="text" id="time" class="time-clock"
-											size="8" />
+											size="8" />  
 									</form>
 								<%if(level.equals("CB")){ %>
 									<a href="examcontent.jsp?examID=<%=e.getExamID()%>&eval=DE">

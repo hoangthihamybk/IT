@@ -18,8 +18,7 @@
 	<title>Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận) </title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<jsp:include page="lib-css/css.jsp" ></jsp:include>
-    <jsp:include page="lib-js/js.jsp" ></jsp:include>
-    
+    <jsp:include page="lib-js/js.jsp" ></jsp:include> 
 </head>
 <body  class="kiem-tra-thi-thu course-1 lang-vi_utf8" id="kiem-tra-thi-thu-index">
 <div id="fb-root"></div>

@@ -45,6 +45,7 @@ public class ScoreController extends HttpServlet {
 			printMap2(mapContentExam);
 			int numberOfRight=new QuestionDAO().checkAnswer(mapAnswer,mapContentExam);
 			double score = new QuestionDAO().resuiltScoreForExam(mapAnswer, mapContentExam);
+            request.setAttribute("score", score);
 			System.out.println("so cau dung la: "+numberOfRight);
 			System.out.println("So diem cua ban la: "+score);
 			new DeThiDAO().delContentExam(MaDeThi);
