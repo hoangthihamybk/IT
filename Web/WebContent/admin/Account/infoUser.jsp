@@ -56,7 +56,7 @@
 		<div class="noidung" style="margin-left:20px">
 			<div class="row" style="margin-left:30px; margin-right:30px">
 				<h2><strong>Thông tin tài khoản</strong>
-					<a href="infoUser.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
+					<a href="../index.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
 				</h2>
 				<hr>
 				

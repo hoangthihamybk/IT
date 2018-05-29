@@ -133,7 +133,7 @@
 		<div class="noidung">
 			<div class="row" style="margin-left:30px; margin-right:30px">
 				<h2><strong>Sửa thông tin tài khoản</strong>
-				<a href="infoUser.jsp?userID=<%=userID%>" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
+				
 				</h2>
 				<hr>
 			</div>
@@ -249,6 +249,7 @@
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <button type="submit" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Sửa tài khoản</button>
+                          <a href="../../infoUser.jsp?userID=<%=userID%>"><button class="btn btn-info"> Hủy</button></a>
                         </div>
                       </div>
 

@@ -12,8 +12,8 @@ String subjectName= SubjectDAO.mapSubject.get(ExamDAO.mapExam.get(examID).getSub
 String subjectID= ExamDAO.mapExam.get(examID).getSubjectID(); 
 Exam e = ExamDAO.mapExam.get(examID);
 %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!DOCTYPE>
+<html>
 <head>
 	<title></title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -46,11 +46,11 @@ Exam e = ExamDAO.mapExam.get(examID);
 
 <div id="quiz-review" class="quiz-test">
     <div class="wrapper clearfix">
-        <div id="breadcrumbs" class="breadcrumbs" style="margin-top: 40px;"><a class="home-1-icon" href="index.jsp">Trang chủ</a> > 
+        <div id="breadcrumbs" class="breadcrumbs" style="margin-top: -20px;"><a class="home-1-icon" href="index.jsp">Trang chủ</a> > 
         <a target="_top" href="infoexam?examID=<%=examID %>" ><%=subjectName %></a> > 
          <%=e.getDescribe() %> </div>
             <div class="review-title clearfix">
-            <div class="quiz-name" style="color:#0072bc;"><%=e.getDescribe() %></div></br>
+            <div class="quiz-name" style="color:#0072bc;"><%=e.getDescribe() %></div>
             <div class="pull-right social-follow">
                 <div style="margin: 0 10px;" class="fb-like " data-href=""
                      data-width="160" data-layout="button_count" data-action="like" data-show-faces="false"

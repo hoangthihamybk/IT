@@ -14,8 +14,8 @@
 <% Map<String, Classed> mapClass = ClassedDAO.mapClassed ;%>
 <% Map<String, Exam> mapExam = SearchDAO.getMapExamByID(classID,subjectID); %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!DOCTYPE>
+<html>
 <head>
 	<title>Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận) lớp 12, môn Ngữ văn, Kiểm tra học kỳ - HOCMAI</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />

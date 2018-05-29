@@ -16,8 +16,8 @@
   DeThi dt = new QuestionDAO(pathLoadFile).createDeThi(eval, Integer.parseInt(ExamDAO.mapExam.get(examID).getNumberOfQuestions()));
   Exam e = ExamDAO.mapExam.get(examID);
 %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!DOCTYPE html >
+<html>
 <head>
 	<title></title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -34,7 +34,8 @@
 <!--  -->
 
 
-<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div><style>
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<style>
     #mod-quiz-attempt #page #header {
         text-align: left;
     }
@@ -51,7 +52,7 @@
 </script>
 <div class="quiz-test" id="attempt-content">
     <div class="wrapper clearfix">
-      <div id="breadcrumbs" class="breadcrumbs" style="margin-top: 40px;">
+      <div id="breadcrumbs" class="breadcrumbs" style="margin-top: -10px;">
 	    <a class="home-1-icon" href="index.jsp">Trang chủ</a> >
 	    <a target="_top" href="infoexam?examID=<%=examID %>" title="<%=subjectName%>"><%=subjectName %></a> >
 	    <a target="_top"><%=e.getDescribe() %></a>  

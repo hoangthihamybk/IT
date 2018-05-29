@@ -12,8 +12,8 @@
 <%		Map<String, Subject> mapSubject = SubjectDAO.mapSubject ;%>
 <%		Map<String, Classed> mapClass = ClassedDAO.mapClassed ;%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận) </title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -30,7 +30,7 @@
             
     <div id="ktth-content">
         <div class="wrapper clearfix">
-        <div id="breadcrumbs" class="breadcrumbs" ><a class="home-1-icon" href="../index.jsp">Trang chủ</a> > Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận)</div>
+        <div id="breadcrumbs" class="breadcrumbs" style="margin-top: -10px;"><a class="home-1-icon" href="../index.jsp">Trang chủ</a> > Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận)</div>
             <div class="tbl_search" style="margin-top:-40px;">
                 <div class="left_search"></div>
                 <div class="center_search">
@@ -48,7 +48,7 @@
 								
 								<div class="test-item-list">
 									<div class="labelcontest">
-										<img src="../images/clock.png" class="activityicon"/> Cơ bản
+										<img src="../images/coban.png" class="activityicon"/> Cơ bản
 									</div>
 									<ul class="quiz-list">
 								<%Map<String,Exam> mapExam = new ExamDAO().getMapExamBySubjectID(sb.getSubjectID(),"CB") ;%>
@@ -67,7 +67,7 @@
 								
 								<div class="test-item-list">
 									<div class="labelcontest">
-										<img src="../images/clock.png" class="activityicon"/> Nâng cao
+										<img src="../images/nangcao.png" class="activityicon"/> Nâng cao
 									</div>
 									<ul class="quiz-list">
 									<%mapExam= new ExamDAO().getMapExamBySubjectID(sb.getSubjectID(),"NC"); %>
@@ -88,7 +88,7 @@
 					<%} }%>
 					
 				</div>
-				<!--</div>-->
+				
 				<div class="page_scorm"></div>
                             
         </div>
@@ -101,9 +101,8 @@
 
 </div>
 <jsp:include page="modal/modal-index.jsp"></jsp:include>
-<div id="WapperPopupTestPenI"></div>
-<script type="text/javascript" src="https://hocmai.vn/php_javascript/popup-pen-m.php"></script>
-
+<!-- <div id="WapperPopupTestPenI"></div> -->
+<!-- <script type="text/javascript" src="https://hocmai.vn/php_javascript/popup-pen-m.php"></script> -->
 <!--<script type="text/javascript" src="/xac-nhan-chuyen-tien/warning.php"></script>-->
 <div style="position: absolute; z-index: -100; bottom: 0;">
 	
