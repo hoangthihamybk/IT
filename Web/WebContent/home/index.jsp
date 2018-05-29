@@ -30,8 +30,8 @@
             
     <div id="ktth-content">
         <div class="wrapper clearfix">
-        <div id="breadcrumbs" class="breadcrumbs"><a class="home-1-icon" href="../index.jsp">Trang chủ</a> > Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận)</div>
-            <div class="tbl_search">
+        <div id="breadcrumbs" class="breadcrumbs" ><a class="home-1-icon" href="../index.jsp">Trang chủ</a> > Hệ thống đề thi, bài kiểm tra, thi thử miễn phí (trắc nghiệm, tự luận)</div>
+            <div class="tbl_search" style="margin-top:-40px;">
                 <div class="left_search"></div>
                 <div class="center_search">
                    <jsp:include page="form/form-search.jsp"></jsp:include>

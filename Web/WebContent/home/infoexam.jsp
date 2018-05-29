@@ -55,7 +55,7 @@
 			type="text/javascript"></script>
 		<div class="quiz-test" id="quiz-content">
 			<div class="wrapper clearfix">
-				<div id="breadcrumbs" class="breadcrumbs">
+				<div id="breadcrumbs" class="breadcrumbs" style="margin-top: 40px;">
 					<a class="home-1-icon" href="index.jsp">Trang chủ</a> > <a target="_top"
 						href="index.jsp" ><%=e.getExamName() %></a> > 
 						<a target="_top" href="index.jsp" > <%=e.getDescribe() %></a>

@@ -537,7 +537,7 @@ img{
     color: #434343;
     font-size: 14px;
     line-height: 120px;
-    margin: 20px 0 0;
+    margin: -42px 0 0;
 }
 #breadcrumbs > a, #breadcrumbs > span {
     color: #2a70b8;

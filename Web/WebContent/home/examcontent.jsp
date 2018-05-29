@@ -3,6 +3,7 @@
 <%@page import="model.Question"%>
 <%@page import="dao.QuestionDAO"%>
 <%@page import="model.DeThi"%>
+<%@page import="model.Exam"%>
 <%@page import="dao.ExamDAO"%>
 <%@page import="dao.SubjectDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -13,6 +14,7 @@
   String pathLoadFile=request.getServletContext().getRealPath("/")+"/file/exam/"+subjectID+"/"+examID+".txt";
   String eval= request.getParameter("eval");
   DeThi dt = new QuestionDAO(pathLoadFile).createDeThi(eval, Integer.parseInt(ExamDAO.mapExam.get(examID).getNumberOfQuestions()));
+  Exam e = ExamDAO.mapExam.get(examID);
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html dir="ltr" lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -49,13 +51,13 @@
 </script>
 <div class="quiz-test" id="attempt-content">
     <div class="wrapper clearfix">
-      <div id="breadcrumbs" class="breadcrumbs">
+      <div id="breadcrumbs" class="breadcrumbs" style="margin-top: 40px;">
 	    <a class="home-1-icon" href="index.jsp">Trang chủ</a> >
 	    <a target="_top" href="infoexam?examID=<%=examID %>" title="<%=subjectName%>"><%=subjectName %></a> >
-	    <a target="_top"><%=SubjectDAO.mapSubject.get(subjectID).getDescribe() %></a>  
+	    <a target="_top"><%=e.getDescribe() %></a>  
       </div>
      <div class="quiz-attempt-content clearfix">
-		<div class="quiz-name"><%=subjectName %></div><div class="pagination"></div></div>
+		<div class="quiz-name" ><%=e.getDescribe() %> </div><div class="pagination"></div></div>
         
         <div class="form-wrapper" id="attempt-form-wrapper">
                 <noscript>
@@ -117,7 +119,6 @@
                 </div>
             </div>
             <div class="submitbtns mdl-align clearfix">
-            	<input type="submit" class="attempt-btn saveonserv" name="saveattempt" value="LƯU BÀI" />
             	<input type="submit" class="attempt-btn replystop" name="finishattempt" value="NỘP BÀI CHẤM ĐIỂM" 
             	onclick="return confirm('Sau khi nộp bài bạn không thể sửa lại bài làm của mình. Bạn có chắc chắn muốn nộp bài hay xem lại bài làm?')" />
 				<input type="hidden" name="timeup" value="0" /></div><br />

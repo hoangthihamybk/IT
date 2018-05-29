@@ -124,7 +124,7 @@
 		<!--  hết menu -->
 		<div class="noidung">
 			<div class="row" style="margin-left:30px; margin-right:30px">
-				<h2><strong>Sửa thông tin tài khoản</strong>
+				<h2><strong>Sửa thông tin phân quyền</strong>
 				<a href="role.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
 				</h2>
 				<hr>

@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.ObjectDAO;
 import dao.UndoDAO;
 import dao.UserDAO;
 import dao.UserDetailDAO;
@@ -40,6 +41,7 @@ public class UserController extends HttpServlet {
 			UserAccount us = UserDAO.mapUser.get(userID);
 			UserAccount usNew = new UserAccount(userIDNew, email, password, us.getGoogleID(), us.getFacebookID(), role);
 			new UserDAO().edit(userID, usNew);
+			
 		} else if (action.equals("DEL")) {
 			String UserID = request.getParameter("UserID");
 			UndoDAO.undoUserAccount.push(UserDAO.mapUser.get(UserID));

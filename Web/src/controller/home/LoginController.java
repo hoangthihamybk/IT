@@ -89,6 +89,4 @@ public class LoginController extends HttpServlet {
 			throws ServletException, IOException {
 		doGet(request, response);
 	}
-
-
 }

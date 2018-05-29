@@ -226,19 +226,13 @@ public class QuestionDAO {
 		dt.setNumberAnswerForOneQuestion(4 + "");
 		dt.setSubjectID("SINH12");
 		List<Question> listOfQuestion = new ArrayList<>();
-		Map<String,Question> mapq = (Map<String, Question>) getListOfQuestion(ConstDefine.DE, numDE).values();
-		Map<String,Question> mapq1 = (Map<String, Question>) getListOfQuestion(ConstDefine.KHO, numKHO).values();
-		Map<String,Question> mapq2 = (Map<String, Question>) getListOfQuestion(ConstDefine.TRUNG_BINH, numTB).values();
-		listOfQuestion.addAll(getListOfQuestionRandom(mapq).values());
-		listOfQuestion.addAll(getListOfQuestionRandom(mapq1).values());
-		listOfQuestion.addAll(getListOfQuestionRandom(mapq2).values());
+		listOfQuestion.addAll(getListOfQuestion(ConstDefine.DE, numDE).values());
+		listOfQuestion.addAll(getListOfQuestion(ConstDefine.KHO, numKHO).values());
+		listOfQuestion.addAll(getListOfQuestion(ConstDefine.TRUNG_BINH, numTB).values());
 		dt.setListOfQuestion(listOfQuestion);
-
-		System.out.println("new random ");
-		System.out.println(listOfQuestion);
-		boolean ok = new DeThiDAO().addContentExam(dt);
-		if (!ok)
-			return null;
+		
+		boolean ok=new DeThiDAO().addContentExam(dt);
+		if(!ok) return null;
 		return dt;
 	}
 
@@ -265,42 +259,7 @@ public class QuestionDAO {
 	}
 
 	public static void main(String[] args) throws IOException {
-		// String pathLoadFile = System.getProperty("user.dir") +
-		// "/src/file/exam/content/sinh/sinh.txt";
-//		String pathLoadFile = System.getProperty("user.dir") + "/src/file/exam/content/sinh/chsinh.txt";
-		String pathLoadFile = "/sinh/chsinh.txt";
-		QuestionDAO qd = new QuestionDAO(pathLoadFile);
-		// DeThi dt = qd.loadData();
-		// for (Question q : dt.getListOfQuestion()) {
-		// System.out.println("ID: " + q.getQuestionID() + "-DAP AN: " +
-		// q.getAnswerRight() + "-" + q.getContent());
-		// List<String> listOfAnswer = q.getListOfAnswer();
-		// for (int i = 0; i < listOfAnswer.size(); i++) {
-		// System.out.println(listOfAnswer.get(i));
-		// }
-		// }
-
-//		Map<String, Question> mapQuestion = qd.getListOfQuestion(ConstDefine.DE, 55);
-//		for (Question q : mapQuestion.values()) {
-//			System.out.println("ID: " + q.getQuestionID() + "-DAP AN: " + q.getAnswerRight() + "-" + q.getContent());
-//			List<String> listOfAnswer = q.getListOfAnswer();
-//			for (int i = 0; i < listOfAnswer.size(); i++) {
-//				System.out.println(listOfAnswer.get(i));
-//			}
-//		}
-
-		DeThi dt =qd.createDeThi("KHO", 20);
-		for (Question q : dt.getListOfQuestion()) {
-			System.out.println("ID: " + q.getQuestionID() + "-DAP AN: " + q.getAnswerRight() + "-" + q.getContent());
-			List<String> listOfAnswer = q.getListOfAnswer();
-			for (int i = 0; i < listOfAnswer.size(); i++) {
-				System.out.println(listOfAnswer.get(i));
-			}
-		}
-//		double test = ((double)2/3)*10;
-//		double rusuilt = (double)Math.round(test*100)/100;
-//		System.out.println(test);
-//		System.out.println(rusuilt);
+		
 	}
 
 }
