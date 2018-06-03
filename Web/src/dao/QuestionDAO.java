@@ -252,10 +252,11 @@ public class QuestionDAO {
 		return numberAnswerRight;
 	}
 
-	public double resuiltScoreForExam(Map<String, String> mapAnswer, Map<String, ContentExam> mapQuestion) {
+	public int resuiltScoreForExam(Map<String, String> mapAnswer, Map<String, ContentExam> mapQuestion) {
 		double answerRight = checkAnswer(mapAnswer, mapQuestion);
-		double test = ((double) answerRight / mapQuestion.size()) * 10;
-		return (double) Math.round(test * 100) / 100;
+		double test = ((double) answerRight / mapQuestion.size()) * 100;
+//		return (double) Math.round(test * 100) / 100;
+		return (int) Math.round(test);
 	}
 
 	public static void main(String[] args) throws IOException {

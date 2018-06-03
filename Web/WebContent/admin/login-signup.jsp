@@ -64,12 +64,12 @@
 
 					<div class="field-wrap">
 						<label> Email <span class="req">*</span>
-						</label> <input type="email" name="email" required autocomplete="off" />
+						</label> <input type="email" name="email" required autocomplete="off" value="hocsinh1@gmail.com" />
 					</div>
 
 					<div class="field-wrap">
 						<label> Mật khẩu<span class="req">*</span>
-						</label> <input type="password" name="password" required autocomplete="off" />
+						</label> <input type="password" name="password" required autocomplete="off" value="1"/>
 					</div>
 
 					<p class="forgot">

@@ -58,7 +58,7 @@
 <jsp:include page="../header/header2.jsp"></jsp:include>
 <!-- header -->
 		<!--  hết menu -->
-		<div class="noidunginfo" style="margin-left:100px">
+		<div class="noidunginfo" style="margin-left:100px; margin-top: 20px;">
 			<div class="row" style="margin-left:30px; margin-right:30px;">
 				<h2><strong>Thông tin tài khoản</strong>
 					<a href="index.jsp" style="float: right;"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>

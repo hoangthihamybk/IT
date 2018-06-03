@@ -84,7 +84,6 @@ public class LoginController extends HttpServlet {
 		response.sendRedirect(url);
 
 	}
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doGet(request, response);

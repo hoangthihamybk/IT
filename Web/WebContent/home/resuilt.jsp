@@ -6,12 +6,14 @@
     pageEncoding="UTF-8"%>
 <%String examID = request.getParameter("examID");
 String numberOfRight = request.getParameter("number");
-
+String score = request.getParameter("score");
 String numberOfQuestions = ExamDAO.mapExam.get(examID).getNumberOfQuestions();
 String subjectName= SubjectDAO.mapSubject.get(ExamDAO.mapExam.get(examID).getSubjectID()).getSubjectName();
 String subjectID= ExamDAO.mapExam.get(examID).getSubjectID(); 
 Exam e = ExamDAO.mapExam.get(examID);
+
 %>
+
 <!DOCTYPE>
 <html>
 <head>
@@ -49,7 +51,7 @@ Exam e = ExamDAO.mapExam.get(examID);
         <div id="breadcrumbs" class="breadcrumbs" style="margin-top: -20px;"><a class="home-1-icon" href="index.jsp">Trang chủ</a> > 
         <a target="_top" href="infoexam?examID=<%=examID %>" ><%=subjectName %></a> > 
          <%=e.getDescribe() %> </div>
-            <div class="review-title clearfix">
+            <div class="review-title clearfix" style="margin-bottom: 15px;">
             <div class="quiz-name" style="color:#0072bc;"><%=e.getDescribe() %></div>
             <div class="pull-right social-follow">
                 <div style="margin: 0 10px;" class="fb-like " data-href=""
@@ -71,7 +73,7 @@ Exam e = ExamDAO.mapExam.get(examID);
                                 <div class="panel panel-default">
                                     <div class="panel-body">
                                         <div class="text-center quiz-score">
-                                      0/10
+                                     <%=score %>/100
                                         </div>
                                         <div class="text-center review">
                                             <div style="text-align: justify">Có lẽ bài học này là một thử thách thực sự với bạn rồi. Bạn cần học lại bài này trong <a title="Bài 2. Cực đại và cực tiểu" href="http://hocmai.vn/mod/ebook/view.php?id=2275&sec=1605" target="_blank">sách giáo khoa</a> hoặc liên hệ với tổng đài thông tin 19006933 của <a style="color: rgb(0,0,255)" href="http://www.hocmai.vn/">Hoconline.vn</a> để được tư vấn. <a style="color: rgb(0,0,255)" href="http://www.hocmai.vn/">Hoconline.vn</a> sẽ đồng hành cùng bạn để vượt qua thử thách này.<br /></div>                                        </div>

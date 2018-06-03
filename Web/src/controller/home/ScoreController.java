@@ -15,17 +15,19 @@ import dao.QuestionDAO;
 import model.ContentExam;
 import model.DeThi;
 
-@WebServlet("/Score")
 public class ScoreController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public ScoreController() {
-        super();
-    }
+ 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
+		System.out.println("Vao day");
 		response.setContentType("text/html;charset=utf-8");
 		String action = request.getParameter("action");
 		String ExamID = request.getParameter("examID");
@@ -34,6 +36,7 @@ public class ScoreController extends HttpServlet {
 		String MaDeThi = request.getParameter("maDeThi");
 		
 		String url="home/resuilt.jsp?examID="+ExamID;
+		//String url = "abdsdfsf";
 		if(action.equals("SCORE")){
 			Map<String, ContentExam> mapContentExam = DeThiDAO.getMapContentExamByExamID(MaDeThi);
 			Map<String, String> mapAnswer = new HashMap<>();
@@ -44,20 +47,18 @@ public class ScoreController extends HttpServlet {
 			printMap(mapAnswer);
 			printMap2(mapContentExam);
 			int numberOfRight=new QuestionDAO().checkAnswer(mapAnswer,mapContentExam);
-			double score = new QuestionDAO().resuiltScoreForExam(mapAnswer, mapContentExam);
+			int score1 = new QuestionDAO().resuiltScoreForExam(mapAnswer, mapContentExam);
 			
-			
+			System.out.println("dssadsadsadsadsadsadsa My");
 			System.out.println("so cau dung la: "+numberOfRight);
-			System.out.println("So diem cua ban la: "+score);
+			System.out.println("So diem cua ban la: "+score1);
 			new DeThiDAO().delContentExam(MaDeThi);
-     		url+="&number="+numberOfRight;
+			String url2 ="&score="+score1+"&number="+numberOfRight;
+     		url+=url2;
+     		
      		
 		}
 		response.sendRedirect(url);
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
 	}
 
 	public void printMap(Map<String,String> mapAnswer ){

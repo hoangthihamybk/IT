@@ -88,7 +88,7 @@ display: none;
 	</div>
 	<!-- /.navbar-collapse --> </nav>
 	<ul class="nav nav-tabs" style="margin-top: 63px;">
-  <li role="presentation" class="active"><a href="../index.jsp">Trang chủ</a></li>
+  <li role="presentation" class="active"><a href="index.jsp">Trang chủ</a></li>
   <li role="presentation"><a href="#">Xem thông tin</a></li>
   <li role="presentation"><a href="#">Hỏi - Đáp</a></li>
   </ul>

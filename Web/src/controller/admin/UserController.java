@@ -18,9 +18,7 @@ import model.UserDetail;
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public UserController() {
-		super();
-	}
+	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -28,6 +26,9 @@ public class UserController extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		String action = request.getParameter("action");
+		
+		System.out.println("action = "+ action);
+	
 		String url = "admin/Account/user.jsp";
 		if (action == null) {
 			System.out.println("none handling");
@@ -70,8 +71,9 @@ public class UserController extends HttpServlet {
 		}
 		else if (action.equals("edit")) {
 			System.out.println("editinfo");
+			
 			String userID = request.getParameter("userID");
-
+			System.out.println("userId = " + userID);
 			String fullname = request.getParameter("fullname");
 			String gender = request.getParameter("gender");
 			String birthday = request.getParameter("birthday");

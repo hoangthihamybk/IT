@@ -81,7 +81,7 @@
             </script>
 
             <!---manhhv is using css in fw_new.css--->
-          <form action="../Score?action=SCORE&maDeThi=<%=dt.getMaDeThiID() %>&examID=<%=examID%>" method ="post">
+          <form action="${pageContext.request.contextPath}/score111?action=SCORE&maDeThi=<%=dt.getMaDeThiID() %>&examID=<%=examID%>" method ="post">
             <div class="boxstandard">
                 <div class="boxcontent">
                     <div class="body">

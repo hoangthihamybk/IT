@@ -153,7 +153,7 @@ String userID = request.getParameter("UserID");
 				<hr>
 			</div>
 			<div class="noidungcon">
-				<form id="editDetail"  class="form-horizontal form-label-left"  action="../../User?action=edit&userID=<%=userID %>" method="post">
+				<form id="editDetail"  class="form-horizontal form-label-left"  action="${pageContext.request.contextPath}/User?action=edit&userID=<%=userID %>" method="post">
  						<div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" id="">Họ và Tên<span class="required">*</span>
                         </label>
